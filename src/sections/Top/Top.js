@@ -13,7 +13,7 @@ export default function Top (){
                 <div className="Top__content">
                     <h1>MARC <br/>McBRIDE</h1>
                     <h2>Music Director</h2>
-                    <p>Coffee fiend. Dog lover. <br/>Health & Fitness junkie. Traveller.</p>
+                    <p>Coffee & Dog lover. <br/>Health & Fitness junkie. Traveller.</p>
                 </div>
 
             </div>
@@ -43,7 +43,6 @@ function handleScroll(){
         if(top<0){
             // top= (top+50);
             const opacity = 1+(top /300);
-            console.log('op',opacity)
             document.querySelector('.Top__content').style.top = top*-.5+'px';
             document.querySelector('.Top__content').style.opacity = opacity;
         }else{
