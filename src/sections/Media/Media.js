@@ -34,8 +34,23 @@ function displayMedia(el){
                 {el.collaborators && <small>Collaborators: {el.collaborators}</small>}
             </div>
             <div className="cover media__play">
-                <img src={playBtn} alt="play"/>
+                <img src={playBtn} onClick={()=>playVideo(el)} alt="play"/>
             </div>
         </div>
     )
+}
+function playVideo(el){
+    console.log(el.embed)
+    const player = document.createElement('div');
+    player.className = 'player';
+    const iframe = '<iframe src="'+el.embed+'" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"></iframe>';
+    const close = '<div class="close">&times;</div>';
+
+    player.innerHTML= close + iframe;
+    player.addEventListener('click',e=>{
+        if(e.target.classList.contains('close')){
+            player.remove();
+        }
+    })
+    document.body.append(player);
 }
