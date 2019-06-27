@@ -1,0 +1,132 @@
+// var
+$color_theme:      #515769;
+
+// mixins
+@mixin desktop-sm{
+    @media only screen and (max-width: 1300px) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin mobile{
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mobile-sm{
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+// @include desktop-sm{
+//
+// }
+// @include tablet{
+//
+// }
+// @include mobile{
+//
+// }
+// @include mobile-sm{
+//
+// }
+
+@mixin anim($name, $time, $delay, $timing-function:linear, $letterSpacing:0rem, $font_size:default) {
+    animation: #{$name} #{$time} #{$delay} forwards #{$timing-function};
+    @include keyframe($name, $letterSpacing, $font-size);
+}
+@mixin keyframe($name, $letterSpacing, $font_size){
+    @keyframes #{$name}{
+        to{
+            left: 0;
+            opacity: 1;
+            top: 0;
+            letter-spacing: $letterSpacing;
+            transform: scale(1);
+            font-size: $font_size;
+        }
+
+    }
+}
+body{
+    font-size: 1.5rem;
+    text-align: left;
+    color: #a6a7aa;
+}
+
+
+.wrapper{
+    width: 110rem;
+    margin: auto;
+
+}
+.cover{
+    align-content: center;
+    display: grid;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.font_themed{
+
+}
+.color_themed{
+    // color: $color_theme;
+    color: crimson;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 0;
+    width: 24rem;
+    text-align: center;
+    // border:solid .2rem $color_theme;
+    border-radius: 2.5rem;
+    // color: $color_theme;
+    // color: #111;
+    font-size: 1.6rem;
+    margin:1rem;
+    cursor: pointer;
+
+}
+section{
+    background: #fff;
+    width: 100%;
+    text-align: left;
+    display: grid;
+    align-content: center;
+    .wrapper{
+        display: grid;
+        grid-template-columns: 35rem 1fr;
+        padding: 17rem 0 12rem;
+
+    }
+
+}
+.section__title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: right;
+    color: $color_theme;
+    padding-right: 10rem;
+}
+
+
+@include desktop-sm{
+
+}
+@include tablet{
+
+}
+@include mobile{
+
+}
+@include mobile-sm{
+
+}

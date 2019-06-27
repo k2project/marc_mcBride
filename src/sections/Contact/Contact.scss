@@ -1,0 +1,57 @@
+@import './../../App.scss';  //import vars and mixins
+.Contact{
+    overflow: hidden;
+    text-align: right;
+    color: #fff;
+    align-content: end;
+    // padding: 0 0 5rem;
+    .cover{
+        background: rgba(171,174,183,.2);
+    }
+    .wrapper{
+        padding: 5rem 0;
+        // align-items: end;
+    }
+    .section__title{
+        text-align: left;
+        margin-bottom: 3rem;
+        color: #30343f;
+    }
+    // .section__content{
+    //     display: grid;
+    //     grid-template-columns: auto auto;
+    //     align-content: end;
+    // }
+}
+// .Contact:before{
+//     display: block;
+//     content: '';
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//     border-width:35vh 100vw 0 0;
+//     border-color:#fff transparent transparent transparent;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//
+// }
+.Contact_bg{
+    background-image: url('./../../media/imgs/MarcMacBride.jpg');
+    background-size: cover;
+    background-position: left;
+    color: #fff;
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.footer{
+    text-align: left;
+    display: grid;
+    align-content: end;
+    padding-bottom: 2rem;
+}

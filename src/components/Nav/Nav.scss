@@ -1,0 +1,48 @@
+@import './../../App.scss';  //import vars and mixins
+
+.Nav{
+    color: #fff;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    padding: 6rem 0 4rem;
+    transition: .5s;
+    // border-bottom: solid .1rem #FAFAFA;
+    .wrapper{
+        display: grid;
+        grid-template-columns:auto 1fr;
+        padding: 0;
+
+    }
+}
+.Nav__brand{
+        font-size: 2.2rem;
+        font-weight: normal;
+        cursor: pointer;
+
+}
+
+
+.Nav__pages{
+
+    text-align: right;
+    a{
+        font-size: 1.2rem;
+        font-size: 1.6rem;
+        // text-transform: uppercase;
+        margin-left:1.7rem;
+    }
+    a.selected{
+        color: $color_theme;
+    }
+
+}
+
+
+@include desktop-sm{
+
+}
