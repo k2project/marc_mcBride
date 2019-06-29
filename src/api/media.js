@@ -45,22 +45,22 @@ export const media = [
         video:'ClubCumming'
     },
     {
-        title:'Maxx - Celebrity Cruises ',
-        role:'Music Creation & Supervision',
-        collaborators:'Paul Ooi and Nick Len',
-        img:'Maxx.jpg',
-        link:'https://vimeo.com/336557512',
-        embed:'https://player.vimeo.com/video/336557512',
-        video:'Maxx'
+        title:'Vanara The Musical - Concept Album ',
+        role:'Music Supervision',
+        collaborators:null,
+        img:'Vanara.jpg',
+        link:'https://vimeo.com/335234865',
+        embed:'https://player.vimeo.com/video/335234865',
+        video:'Vanara'
     },
     {
-        title:'Shoshana Bean & Eva Noblezada',
-        role:'Music Director ',
+        title:'Grease The Musical',
+        role:'Music Supervision',
         collaborators:null,
-        img:'S&E.jpg',
-        link:'https://vimeo.com/335244275',
-        embed:'https://player.vimeo.com/video/335244275',
-        video:'ShoshanaAndEva'
+        img:'Grease.jpg',
+        link:'https://vimeo.com/336550111',
+        embed:'https://player.vimeo.com/video/336550111',
+        video:'Grease'
     },
     {
         title:'Cilla The Musical ',
@@ -81,13 +81,13 @@ export const media = [
         video:'ShoshanaLive'
     },
     {
-        title:'Vanara The Musical - Concept Album ',
-        role:'Music Supervision',
-        collaborators:null,
-        img:'Vanara.jpg',
-        link:'https://vimeo.com/335234865',
-        embed:'https://player.vimeo.com/video/335234865',
-        video:'Vanara'
+        title:'Maxx - Celebrity Cruises ',
+        role:'Music Creation & Supervision',
+        collaborators:'Paul Ooi and Nick Len',
+        img:'Maxx.jpg',
+        link:'https://vimeo.com/336557512',
+        embed:'https://player.vimeo.com/video/336557512',
+        video:'Maxx'
     },
     {
         title:'Carrie Hope Fletcher’s Debut Album',
@@ -99,12 +99,13 @@ export const media = [
         video:'CarrieHopeFletcher'
     },
     {
-        title:'Grease The Musical',
-        role:'Music Supervision',
+        title:'Shoshana Bean & Eva Noblezada',
+        role:'Music Director ',
         collaborators:null,
-        img:'Grease.jpg',
-        link:'https://vimeo.com/336550111',
-        embed:'https://player.vimeo.com/video/336550111',
-        video:'Grease'
+        img:'S&E.jpg',
+        link:'https://vimeo.com/335244275',
+        embed:'https://player.vimeo.com/video/335244275',
+        video:'ShoshanaAndEva'
     },
+
 ]

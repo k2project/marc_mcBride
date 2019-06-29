@@ -41,8 +41,6 @@ function getVideo(el){
     //to stop dbl click to create 2 players
     if(!document.querySelector('.player')){
         const player = document.createElement('div');
-
-        // const iframe = '<iframe src="'+el.embed+'" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" autoplay ></iframe>';
         const close = '<div class="close">&times;</div>';
         const video = '<video width="640" height="360" autoplay><source src="./videos/'+el.video+'.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
         const ctrls = '<div class="player__ctrls"><div class="player__btn paused"></div><div class="player__progress"><span></span></div><div class="player_timing"></div></div>';
@@ -89,18 +87,21 @@ function handlePlayerClick(player){
                 clearInterval(videoInt)
             }
         }
-
+        //set video duration
+        if(e.target.closest('div').classList.contains('player__progress')){
+            const rect = player.querySelector('.player__progress').getBoundingClientRect();
+            const x = (e.clientX - rect.left)/rect.width;
+            const newCurrentTime = x * vid.duration;
+            vid.currentTime = newCurrentTime.toFixed(2);
+        }
     })
 }
 function getVideoTiming(player){
-    // console.log(player)
     const vid = player.firstElementChild;
-    // console.log(vid)
     const d = vid.duration;
     const t = vid.currentTime;
-    const duration = getTime(d);
-    const time = getTime(t);
-    // console.log(duration.mins, duration.secs, time)
+    const duration = getTimeFormated(d);
+    const time = getTimeFormated(t);
     const timingEl = player.querySelector('.player_timing');
     timingEl.textContent = time.mins+':'+time.secs+' / '+duration.mins+':'+duration.secs;
     const progress = player.querySelector('.player__progress span');
@@ -108,12 +109,11 @@ function getVideoTiming(player){
     if(t>0){
         w = (100 / d) * t;
         w = w.toFixed(2);
-        console.log(w)
         progress.style.width = w+'%';
     }
 
 }
-function getTime(t){
+function getTimeFormated(t){
     const mins = ~~((t % 3600) / 60);
     let secs =~~t % 60;
     secs = ("0" + secs).slice(-2);
@@ -122,7 +122,6 @@ function getTime(t){
 function closeVideoOnPlayEnd(vid){
     const int = setInterval(()=>{
         if(vid.currentTime === vid.duration){
-            // vid.parentElement.classList.remove('shown');
             clearInterval(int)
             clearInterval(videoInt);
             setTimeout(()=>{
