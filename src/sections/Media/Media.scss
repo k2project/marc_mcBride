@@ -67,7 +67,7 @@
 }
 .player{
     position: fixed;
-    top: 0;
+    // top: 0;
     left: 0;
     background: rgba(5,5,5,.9);
     z-index: 99;
@@ -76,8 +76,10 @@
     display: grid;
     align-content: center;
     text-align: center;
+    video,
     iframe{
-        margin: auto;
+        margin: 0 auto;
+
     }
     .close{
         color: #fff;
@@ -89,5 +91,60 @@
     }
     top: 80%;
     opacity: 0;
-    @include anim(SlidePlayer, .25s, 0s, ease-out);
+    transition: .25s ease-out;
+    // @include anim(SlidePlayer, .25s, 0s, ease-out);
+}
+.player.shown{
+    top: 0;
+    opacity: 1;
+    transition: .25s ease-out;
+}
+.player.hidden{
+    top: 100%;
+    opacity: 0.5;
+    transition: .25s ease-out;
+}
+.player__ctrls{
+    height: 4rem;
+    top: -4rem;
+    width: 64rem;
+    margin: auto;
+    background: rgba(20,20,20,.7);
+    margin-bottom: -1rem;
+    display: grid;
+    align-content: end;
+    padding: 0 2rem;
+    grid-template-columns: 3rem 1fr 7rem;
+    font-size: 1rem;
+    grid-column-gap: 1rem;
+    text-align: center;
+}
+.player__btn{
+    height: 2.3rem;
+    top: -.7rem;
+    background-image: url('./../../media/icons/play.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.player__btn.paused{
+    background-image: url('./../../media/icons/pause.png');
+
+}
+.player__progress{
+    opacity: .8;
+    background: #fff;
+    border-radius: .5rem;
+    height: .5rem;
+    top: .4rem;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background: crimson;
+        width: 0;
+        border-radius: .5rem;
+        // transition: .25s;
+    }
 }
