@@ -42,7 +42,7 @@ function getVideo(el){
     if(!document.querySelector('.player')){
         const player = document.createElement('div');
         const close = '<div class="close">&times;</div>';
-        const video = '<video width="640" height="360" autoplay><source src="./Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        const video = '<video width="640" height="360" autoplay><source src="https://k2project.github.io/marc_mcBride/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
         // const video = '<video width="640" height="360" autoplay><source src="./videos/'+el.video+'.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
         const ctrls = '<div class="player__ctrls"><div class="player__btn paused"></div><div class="player__progress"><span></span></div><div class="player_timing"></div></div>';
         const title = '<p>'+el.title+'</p>';
