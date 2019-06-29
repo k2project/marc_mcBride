@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/EdenEspinosa.da51518c.jpg"
   },
   {
-    "revision": "c76e4682b98e29222d0b",
+    "revision": "33abe4db4e2766a9d2b5",
     "url": "/marc_mcBride/static/css/main.2bb16b37.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/Cosmopolitan.53cd9fa5.jpg"
   },
   {
-    "revision": "c76e4682b98e29222d0b",
-    "url": "/marc_mcBride/static/js/main.124bf943.chunk.js"
+    "revision": "33abe4db4e2766a9d2b5",
+    "url": "/marc_mcBride/static/js/main.93b382ff.chunk.js"
   },
   {
     "revision": "94e6862200b75c639f44f7b05b5933fa",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/media.789043e2.png"
   },
   {
-    "revision": "a69c6c38e65213f621f9fb106b793c5f",
+    "revision": "a4a30b5b4d9715343744dec399a3d028",
     "url": "/marc_mcBride/index.html"
   }
 ];
