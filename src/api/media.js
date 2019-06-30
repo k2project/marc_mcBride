@@ -81,13 +81,13 @@ export const media = [
         video:'ShoshanaLive'
     },
     {
-        title:'Maxx - Celebrity Cruises ',
-        role:'Music Creation & Supervision',
-        collaborators:'Paul Ooi and Nick Len',
-        img:'Maxx.jpg',
-        link:'https://vimeo.com/336557512',
-        embed:'https://player.vimeo.com/video/336557512',
-        video:'Maxx'
+        title:'Shoshana Bean & Eva Noblezada',
+        role:'Music Director ',
+        collaborators:null,
+        img:'S&E.jpg',
+        link:'https://vimeo.com/335244275',
+        embed:'https://player.vimeo.com/video/335244275',
+        video:'ShoshanaAndEva'
     },
     {
         title:'Carrie Hope Fletcher’s Debut Album',
@@ -99,13 +99,13 @@ export const media = [
         video:'CarrieHopeFletcher'
     },
     {
-        title:'Shoshana Bean & Eva Noblezada',
-        role:'Music Director ',
-        collaborators:null,
-        img:'S&E.jpg',
-        link:'https://vimeo.com/335244275',
-        embed:'https://player.vimeo.com/video/335244275',
-        video:'ShoshanaAndEva'
+        title:'Maxx - Celebrity Cruises International',
+        role:'Music Creation & Supervision',
+        collaborators:'Paul Ooi and Nick Len',
+        img:'Maxx.jpg',
+        link:'https://vimeo.com/336557512',
+        embed:'https://player.vimeo.com/video/336557512',
+        video:'Maxx'
     },
 
 ]
