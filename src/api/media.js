@@ -55,7 +55,7 @@ export const media = [
     },
     {
         title:'Grease The Musical',
-        role:'Music Supervision',
+        role:'Music Director',
         collaborators:null,
         img:'Grease.jpg',
         link:'https://vimeo.com/336550111',
