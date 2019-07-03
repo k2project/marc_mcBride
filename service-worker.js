@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/marc_mcBride/precache-manifest.a1c2fa01b38368a219dab3494fa171c5.js"
+  "/marc_mcBride/precache-manifest.a900eec624015687d0411cd1422af2fa.js"
 );
 
 workbox.clientsClaim();
