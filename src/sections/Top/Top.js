@@ -3,7 +3,13 @@ import './Top.scss';
 import Nav from './../../components/Nav/Nav';
 
 export default function Top (){
-    useEffect(handleScroll);
+    useEffect(()=>{
+        window.addEventListener('scroll',handleScroll);
+        return ()=>{
+            window.removeEventListener('scroll',handleScroll);
+
+        }
+    });
     return(
         <section className="Top" id="welcome">
             <div className="cover bg"></div>
@@ -13,7 +19,7 @@ export default function Top (){
                 <div className="Top__content">
                     <h1>MARC <br/>McBRIDE</h1>
                     <h2>Music Director</h2>
-                    <p>Coffee & Dog lover. <br/>Health & Fitness junkie. Traveller.</p>
+                    <p>Coffee & Dogs lover. <br/>Health & Fitness junkie. Traveller.</p>
                 </div>
 
             </div>
@@ -21,17 +27,15 @@ export default function Top (){
     )
 };
 function handleScroll(){
-    window.addEventListener('scroll', ()=>{
-        let top = document.querySelector('.Top').getBoundingClientRect().top;
+        let topElRectTop = document.querySelector('.Top').getBoundingClientRect().top;
+        const topEl = document.querySelector('.Top__content');
 
-        if(top<0){
-            // top= (top+50);
-            const opacity = 1+(top /300);
-            document.querySelector('.Top__content').style.top = top*-.5+'px';
-            document.querySelector('.Top__content').style.opacity = opacity;
+        if(topElRectTop < 0){
+            const opacity = 1+( topElRectTop/300 );
+            topEl.style.top = topElRectTop * -.5 + 'px';
+            topEl.style.opacity = opacity;
         }else{
-            document.querySelector('.Top__content').style.top ='0px';
-            document.querySelector('.Top__content').style.opacity = 1;
+            topEl.style.top ='0px';
+            topEl.style.opacity = 1;
         }
-    })
 }

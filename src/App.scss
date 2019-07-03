@@ -110,9 +110,12 @@ section{
 @include mobile{
     .wrapper{
         width: 100%;
-        padding: 17rem 2rem 12rem;
+        padding: 17rem 5rem 12rem;
     }
 }
 @include mobile-sm{
+    .wrapper{
+        padding: 17rem 2rem 12rem;
+    }
 
 }
