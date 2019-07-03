@@ -36,13 +36,14 @@ function handleNavOnScroll(){
     const color_dark = '#515769';
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.Nav__pages a');
-    const html = document.documentElement;
-    const offset = html.scrollTop + window.innerHeight;
-    const height = html.offsetHeight;
+    //const html = document.documentElement;
+    // const offset = html.scrollTop + window.innerHeight;
+    //const height = html.offsetHeight;
     const topElRectTop = document.querySelector('.Top').getBoundingClientRect().top;
     const aboutElRectTop = document.querySelector('.About').getBoundingClientRect().top;
     const navEl = document.querySelector('.Nav');
     const menu = document.querySelectorAll('.Nav__ham span');
+    const workElRectBottom = document.querySelector('.Work').getBoundingClientRect().bottom;
 
     sections.forEach(section=>{
         const top = section.getBoundingClientRect().top;
@@ -85,12 +86,13 @@ function handleNavOnScroll(){
             }
         }
         //app scrolled to bottom
-         if (offset > height-100) {
+         if (workElRectBottom - window.innerHeight < 0 ) {
              navLinks.forEach((a,i,arr)=>{
                      a.style.color = color_dark;
                      arr[arr.length-1].style.color = theme_color;
              })
         }
+        
     })
 
 }
