@@ -61,6 +61,10 @@ body{
     text-align: left;
     color: #a6a7aa;
 }
+p{
+    line-height: 1.6;
+    margin: 0 0 2rem;
+}
 
 .cover{
     align-content: center;
@@ -102,20 +106,32 @@ section{
     .wrapper{
         width: 100%;
         padding: 17rem 5rem 12rem;
+        grid-template-columns: 30rem 1fr;
     }
 }
 @include tablet{
+    .wrapper{
+        padding: 17rem 10rem 12rem;
+        display: block;
+    }
+    .section__title{
+        text-align: left;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
 
 }
 @include mobile{
     .wrapper{
-        width: 100%;
-        padding: 17rem 5rem 12rem;
+        padding: 12rem 8rem 12rem;
+    }
+    p{
+        font-size: 1.2rem;
     }
 }
 @include mobile-sm{
     .wrapper{
-        padding: 17rem 2rem 12rem;
+        padding: 17rem 2rem 12rem 5rem;
     }
 
 }

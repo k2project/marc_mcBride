@@ -62,7 +62,7 @@
 @include mobile{
     .Top{
         padding-left: 4rem;
-    
+
         h1{
             font-size: 4rem;
         }
@@ -81,4 +81,8 @@
 }
 //max480
 @include mobile-sm{
+    .Top{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }

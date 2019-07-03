@@ -4,43 +4,17 @@
     text-align: right;
     color: #fff;
     align-content: end;
-    // padding: 0 0 5rem;
     .cover{
         background: rgba(171,174,183,.2);
     }
     .wrapper{
         padding: 5rem 0;
-        // align-items: end;
     }
-    .section__title{
-        text-align: left;
-        margin-bottom: 3rem;
-        color: #30343f;
-    }
-    // .section__content{
-    //     display: grid;
-    //     grid-template-columns: auto auto;
-    //     align-content: end;
-    // }
 }
-// .Contact:before{
-//     display: block;
-//     content: '';
-//     width: 0;
-//     height: 0;
-//     border-style: solid;
-//     border-width:35vh 100vw 0 0;
-//     border-color:#fff transparent transparent transparent;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: 2;
-//
-// }
 .Contact_bg{
     background-image: url('./../../media/imgs/mmb.jpg');
     background-size: cover;
-    background-position: left;
+    background-position: left bottom;
     color: #fff;
     height: 110vh;
     width: 100%;
@@ -49,17 +23,62 @@
     left: 0;
 
 }
-.footer{
+footer{
     text-align: left;
     display: grid;
     align-content: end;
-    // padding-bottom: 2rem;
 }
 .SocialMedia{
     margin: -1rem 0 0;
     img{
         height: 1.8rem;
         margin-right: 1rem;
+
+    }
+}
+//max 1200
+@include desktop-sm{
+    .Contact{
+        .wrapper{
+            padding: 5rem;
+            display: grid;
+        }
+    }
+}
+//max 1024
+@include tablet{
+    .Contact_bg{
+        background-position: 40% bottom;
+    }
+    .Contact{
+        .wrapper{
+            padding: 4rem 2rem 3rem;
+            grid-template-columns: auto 1fr;
+        }
+        small{
+            font-size: 1rem;
+        }
+    }
+}
+//max 768
+@include mobile{
+    .Contact_bg{
+        background-position: 50% bottom;
+    }
+
+}
+//max480
+@include mobile-sm{
+    .Contact{
+        .wrapper{
+            padding: 4rem 2rem 3rem;
+            grid-template-columns:1fr;
+        }
+        footer{
+            grid-row: 2;
+            text-align: center;
+            padding-top: 3rem;
+        }
 
     }
 }

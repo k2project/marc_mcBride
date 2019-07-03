@@ -38,8 +38,3 @@ input, button, select, option {
 
 input:focus, textarea:focus, select:focus, button:focus {
   outline: 0; }
-
-p{
-    line-height: 1.6;
-    margin: 0 0 2rem;
-}

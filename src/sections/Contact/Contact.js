@@ -11,12 +11,9 @@ export default function Contact (){
             <div className="Contact_bg"></div>
             <div className="cover"></div>
             <div className="wrapper">
-                <div className="footer">
-                    {/* <div className="section__title">Contacts</div> */}
+                <footer>
                         <small>Marc McBride Official Website&copy; {new Date().getFullYear()}</small>
-
-
-                </div>
+                </footer>
                 <div className="section__content">
                     <p>
                         Global Artists <br/>
