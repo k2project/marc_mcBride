@@ -2,47 +2,128 @@
 
 .Nav{
     color: #fff;
-    font-size: 1.2rem;
+    left: 0;
+    font-size: 1.6rem;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 9;
-    text-align: center;
     width: 100%;
     padding: 6rem 0 4rem;
-    transition: .5s;
-    // border-bottom: solid .1rem #FAFAFA;
+    transition: .25s;
     .wrapper{
         display: grid;
         grid-template-columns:auto 1fr;
         padding: 0;
-
     }
 }
 .Nav__brand{
         font-size: 2.2rem;
         font-weight: normal;
-        cursor: pointer;
 
 }
 
+.Nav__ham{
+    display: none;
 
+}
 .Nav__pages{
-
     text-align: right;
     a{
-        font-size: 1.2rem;
-        font-size: 1.6rem;
-        // text-transform: uppercase;
         margin-left:1.7rem;
-    }
-    a.selected{
-        color: $color_theme;
+        transition: none;
+        top: .2rem;
     }
 
 }
 
 
+//max 1200
 @include desktop-sm{
+    .Nav .wrapper{
+        padding: 0 5rem;
+    }
+    .Nav{
+        padding: 4rem 0 3rem;
+    }
+
+}
+//max 1024
+@include tablet{
+    .Nav{
+        padding: 4rem 0 2rem;
+        font-size: 1.4rem;
+    }
+    .Nav__brand{
+        font-size: 1.8rem;
+    }
+}
+//max 768
+@include mobile{
+    .Nav .wrapper{
+        padding: 0 2rem;
+    }
+}
+//max480
+@include mobile-sm{
+    .Nav{
+        .wrapper{
+            grid-template-columns: 1fr auto;
+        }
+    }
+    .Nav__brand{
+        font-size: 2rem;
+    }
+    .Nav__ham{
+        display: block;
+        top:.2rem;
+        cursor: pointer;
+        span{
+            cursor: pointer;
+            display: block;
+            width: 2.7rem;
+            height: .3rem;
+            background: #fff;
+            margin-bottom: .5rem;
+
+        }
+    }
+    .Nav__pages{
+        grid-column: span 2;
+        text-align: center;
+        display: none;
+    }
+    .Nav.open{
+        .Nav__pages{
+            margin-top: 3rem;
+            border-top: solid .1rem #fafafa;
+            display: block;
+            padding: 2rem 0 0;
+            a{
+                top: 2rem;
+                opacity: 0;
+
+            }
+            a:nth-child(1){@include anim( slideNaVPagesIn, .25s, 0s, ease-out)}
+            a:nth-child(2){@include anim( slideNaVPagesIn, .25s, .1s, ease-out)}
+            a:nth-child(3){@include anim( slideNaVPagesIn, .25s, .2s, ease-out)}
+            a:nth-child(4){@include anim( slideNaVPagesIn, .25s, .3s, ease-out)}
+        }
+        .Nav__ham{
+            span{
+                height: .2rem;
+            }
+            span:nth-child(1){
+                transform: rotate(45deg);
+                top: .35rem;
+            }
+            span:nth-child(3){
+                transform: rotate(-45deg);
+                top: -.35rem;
+            }
+            span:nth-child(2){
+                display: none;
+            }
+        }
+    }
 
 }

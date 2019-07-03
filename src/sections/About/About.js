@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.scss';
-import marc from './../../media/imgs/marc.png';
 
 export default function About (){
     return(

@@ -3,7 +3,7 @@ $color_theme:      #515769;
 
 // mixins
 @mixin desktop-sm{
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1200px) {
         @content;
     }
 }
@@ -22,15 +22,19 @@ $color_theme:      #515769;
         @content;
     }
 }
+////max 1200
 // @include desktop-sm{
 //
 // }
+////max 1024
 // @include tablet{
 //
 // }
+////max 768
 // @include mobile{
 //
 // }
+////max480
 // @include mobile-sm{
 //
 // }
@@ -58,12 +62,6 @@ body{
     color: #a6a7aa;
 }
 
-
-.wrapper{
-    width: 110rem;
-    margin: auto;
-
-}
 .cover{
     align-content: center;
     display: grid;
@@ -73,40 +71,22 @@ body{
     top: 0;
     width: 100%;
 }
-.font_themed{
 
-}
-.color_themed{
-    // color: $color_theme;
-    color: crimson;
-}
 
-.btn{
-    display: inline-block;
-    padding: 1.2rem 0;
-    width: 24rem;
-    text-align: center;
-    // border:solid .2rem $color_theme;
-    border-radius: 2.5rem;
-    // color: $color_theme;
-    // color: #111;
-    font-size: 1.6rem;
-    margin:1rem;
-    cursor: pointer;
-
-}
 section{
     background: #fff;
     width: 100%;
     text-align: left;
     display: grid;
     align-content: center;
-    .wrapper{
-        display: grid;
-        grid-template-columns: 35rem 1fr;
-        padding: 17rem 0 12rem;
+}
+.wrapper{
+    width: 110rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+    padding: 17rem 0 12rem;
 
-    }
 
 }
 .section__title{
@@ -119,13 +99,19 @@ section{
 
 
 @include desktop-sm{
-
+    .wrapper{
+        width: 100%;
+        padding: 17rem 5rem 12rem;
+    }
 }
 @include tablet{
 
 }
 @include mobile{
-
+    .wrapper{
+        width: 100%;
+        padding: 17rem 2rem 12rem;
+    }
 }
 @include mobile-sm{
 
