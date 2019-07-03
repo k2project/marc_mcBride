@@ -17,14 +17,14 @@ export default function Contact (){
                 <div className="section__content">
                     <p>
                         Global Artists <br/>
-                        <a href="http://www.globalartists.com" target="_blank">www.globalartists.com</a>
+                        <a href="http://www.globalartists.com" target="_blank" rel="noopener noreferrer">www.globalartists.com</a>
                         <br/>
-                        <a href="mailto:michaelgarrett@globalartists.com?Subject=Re: Marc McBride (via website)" target="_blank">michaelgarrett@globalartists.com</a>
+                        <a href="mailto:michaelgarrett@globalartists.com?Subject=Re: Marc McBride (via website)" target="_blank" rel="noopener noreferrer">michaelgarrett@globalartists.com</a>
                         <br/>
                     </p>
                     <p>
                         Get In Touch Directly<br/>
-                        <a href="mail@marcmcbrde.co.uk?Subject=Message Via Your Website" target="_blank">mail@marcmcbrde.co.uk</a>
+                        <a href="mail@marcmcbrde.co.uk?Subject=Message Via Your Website" target="_blank" rel="noopener noreferrer">mail@marcmcbrde.co.uk</a>
 
                     </p>
                     <div className="SocialMedia">

@@ -1,84 +1,85 @@
 @import './../../App.scss';  //import vars and mixins
 .Media{
     background: #FAFAFA;
-
     .section__content{
         display: grid;
-        grid-gap: 0;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 25rem);
         grid-auto-rows: 20rem;
-    }
-    .media{
-        display: none;
-        div{
-            padding: 3rem;
-            color: #fff;
-        }
-        background: $color_theme;
-        text-align: center;
-        margin: .2rem;
-        overflow: hidden;
-        font-size: 1.3rem;
-        b{
-            font-weight: 600;
-            padding-bottom: .8rem;
-            font-size: 1.4rem;
-            line-height: 1.2;
-        }
-        small{
-            position: absolute;
-            bottom: 2rem;
-            width: 100%;
-            padding: 0 1rem;
-            font-size: 1rem;
-        }
-    }
-    .media__bg{
-        background-size: cover;
-        background-position: center;
-        opacity: .3;
-        transition: .5s;
-    }
-
-    .media__play{
-        img{
-            width: 45%;
-            margin: auto;
-            cursor: pointer;
-        }
-        top: 100%;
-    }
-    .media:hover{
-        .media__bg{
-            opacity: .8;
-            transition: .7s;
-            transform: scale(1.2);
-        }
-        .media__text{
-            top: -50%;
-            opacity: 0;
-            transition: .5s;
-        }
-        .media__play{
-            top: 0;
-            transition: .5s ease-in-out;
-        }
     }
 
 }
+.media{
+    color: #fff;
+    background: $color_theme;
+    text-align: center;
+    margin: .2rem;
+    overflow: hidden;
+    font-size: 1.1rem;
+
+}
+.media__text{
+    padding: 3rem;
+}
+.media__title{
+    padding-bottom: .8rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.media__collaborators{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.media__bg{
+    background-size: cover;
+    background-position: center;
+    opacity: .3;
+    transition: .5s;
+}
+
+.cover.media__play{
+    img{
+        width: 9rem;
+        margin: auto;
+        cursor: pointer;
+    }
+    top: 100%;
+}
+.media:hover{
+    .media__bg{
+        opacity: .8;
+        transition: .7s;
+        transform: scale(1.2);
+    }
+    .media__text{
+        top: -50%;
+        opacity: 0;
+        transition: .5s;
+    }
+    .cover.media__play{
+        top: 0;
+        transition: .5s ease-in-out;
+    }
+}
+
+//=====================
+//========player=======
+//=====================
 .player{
     position: fixed;
     // top: 0;
     left: 0;
-    background: rgba(5,5,5,.9);
+    background: rgba(5,5,5,.95);
     z-index: 99;
     height: 100vh;
     width: 100%;
     display: grid;
     align-content: center;
     text-align: center;
-    video,
-    iframe{
+    video{
+
         margin: 0 auto;
         width: 64rem;
         height: 36rem;
@@ -88,8 +89,8 @@
         color: #fff;
         font-size: 6rem;
         position: absolute;
-        right: 12rem;
-        top: 6rem;
+        right: 8%;
+        top: 5%;
         cursor: pointer;
     }
     top: 80%;
@@ -121,6 +122,18 @@
     font-size: 1rem;
     grid-column-gap: 1rem;
     text-align: center;
+    z-index: 3;
+}
+.player__title{
+    // position: absolute;
+    // right: 20%;
+    // bottom: 15%;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    // p{
+    //     margin: 0;
+    // }
+    // z-index: -1;
 }
 .player__btn{
     height: 2.3rem;
@@ -150,5 +163,56 @@
         width: 0;
         border-radius: .5rem;
         // transition: .25s;
+    }
+}
+//max 1200
+@include desktop-sm{
+    .Media .section__content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 22rem;
+    }
+}
+//max 1024
+@include tablet{
+
+    .player .close{
+        top: 2rem;
+        right: 5rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .player__ctrls,
+    .player video{
+        width: 90%;
+    }
+}
+//max 768
+@include mobile{
+    .Media .wrapper{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .Media .section__title{
+        padding-left: 8rem;
+        margin-bottom: 3rem;
+    }
+    .Media .section__content{
+        grid-auto-rows: 18rem;
+    }
+    .player .close{
+        top: 3rem;
+        right: 3rem;
+        font-size: 5rem;
+    }
+
+}
+//max480
+@include mobile-sm{
+    .Media .section__title{
+        padding-left: 5rem;
+    }
+    .Media .section__content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 20rem;
     }
 }

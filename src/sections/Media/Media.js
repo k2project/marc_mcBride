@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Media.scss';
 import {media} from './../../api/media';
 import playBtn from './../../media/icons/playBtn.png';
@@ -11,7 +11,6 @@ export default function Media (){
             <div className="wrapper">
                 <div className="section__title">Media</div>
                 <div className="section__content">
-
                     {mediaBox}
                 </div>
 
@@ -25,13 +24,12 @@ function displayMedia(el){
     return (
         <div className="media" key={el.title} >
             <div className="cover media__bg" style={{backgroundImage:"url("+bg+")"}} ></div>
-            <div className="cover media__text">
-                <b>{el.title}</b>
-                <br/>
-                {el.role}
-                {el.collaborators && <small>Collaborators: {el.collaborators}</small>}
+            <div className="media__text cover">
+                {el.title && <div className="media__title"><b>{el.title}</b></div>}
+                {el.role && <div className="media__role">{el.role}</div>}
+                {el.collaborators && <div className="media__collaborators"><small>Collaborators: {el.collaborators}</small></div>}
             </div>
-            <div className="cover media__play">
+            <div className="media__play cover">
                 <img src={playBtn} onClick={()=>getVideo(el)} alt="play"/>
             </div>
         </div>
@@ -42,11 +40,16 @@ function getVideo(el){
     if(!document.querySelector('.player')){
         const player = document.createElement('div');
         const close = '<div class="close">&times;</div>';
-        const video = '<video width="640" height="360" autoplay><source src="/marc_mcBride/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
 
+        ////DEVELOPEMENT
+        // const video = '<video width="640" height="360" autoplay><source src="/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+
+        ////GITHUB PAGES
+        const video = '<video width="640" height="360" autoplay><source src="/marc_mcBride/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        ////WEBSITE
         // const video = '<video width="640" height="360" autoplay><source src="./videos/'+el.video+'.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
         const ctrls = '<div class="player__ctrls"><div class="player__btn paused"></div><div class="player__progress"><span></span></div><div class="player_timing"></div></div>';
-        const title = '<p>'+el.title+'</p>';
+        const title = '<div class = "player__title"><p>'+el.title+'</p></div>';
 
         player.innerHTML=video+ctrls+title+close;
         player.className = 'player';
@@ -69,13 +72,7 @@ function getVideo(el){
     }
 
 }
-// function Video(props){
-//     console.log(props)
-//     return <video width="640" height="360" autoplay>
-//         <source src={"./../../media/videos/"+props.video+".mp4"} type="video/mp4" />
-//         Your browser does not support the video tag.
-//     </video>
-// }
+
 function handlePlayerClick(player){
     const vid = player.firstElementChild;
     player.addEventListener('click',e=>{
