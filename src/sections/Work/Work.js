@@ -9,41 +9,88 @@ export default function Work (){
                 <div  className="section__content">
                     <p><b>Music Supervision:</b></p>
                     <p>
-                        Davines World Wide Hair Tour 2019 -The Harpa, Iceland  | Orchestra: Icelandic Symphony |  <br/>
-                        Cilla The Musical - UK Tour <i>( Nominated Best Musical What's On Stage Awards )</i> <br/>
-                        Dreamboats & Petticoats 10th Anniversary - UK Tour <br/>
-                        Carrie Hope Fletcher’s Debut Album - When The Curtain Falls <i>( Number 1 in the iTunes Download Charts )</i> <br/>
-                        Vanara The Musical - Concept Album  <br/>
-                        Life - Celebrity Cruises International <i>( Winner Travel Weekly Gold Award in the USA within the ‘Premium Ship Entertainment’ )</i> <br/>
-                        Cosmopolitan- Celebrity Cruises International <br/>
-                        Maxx - Celebrity Cruises International <br/>
-                        P&O Cruises International (In association with the the TCB Group, Gareth Walker & Natalie Lowe)
-
-
+                        <span>
+                            Davines World Wide Hair Tour 2019 -The Harpa, Iceland <br className="mobile"/> | Orchestra: Icelandic Symphony |
+                        </span>
+                        <span>
+                            Cilla The Musical - UK Tour <br className="mobile"/> <i>( Nominated Best Musical What's On Stage Awards )</i>
+                        </span>
+                        <span>
+                            Dreamboats & Petticoats 10th Anniversary - UK Tour
+                        </span>
+                        <span>
+                            Carrie Hope Fletcher’s Debut Album - When The Curtain Falls <br className="mobile"/> <i>( Number 1 in the iTunes Download Charts )</i>
+                        </span>
+                        <span>
+                            Vanara The Musical - Concept Album
+                        </span>
+                        <span>
+                            Life - Celebrity Cruises International <br className="mobile"/> <i>( Winner Travel Weekly Gold Award in the USA within the ‘Premium Ship Entertainment’ )</i>
+                        </span>
+                        <span>
+                            Cosmopolitan- Celebrity Cruises International
+                        </span>
+                        <span>
+                            Maxx - Celebrity Cruises International
+                        </span>
+                        <span>
+                            P&O Cruises International <br className="mobile"/> (In association with the the TCB Group, Gareth Walker & Natalie Lowe)
+                        </span>
                     </p>
                     <p><b>Music Direction:</b></p>
                     <p>
-                        We Will Rock You - Royal Caribbean International <br/>
-                        Grease The Musical - Royal Caribbean International <br/>
-                        Glamis Prom - Glamis Castle | Orchestra: British Sinfonietta |  <br/>
-                        Broken Strings - Celebrity Cruises International  <br/>
-                        Eden Espinosa - Live In London <br/>
-                        Shoshana Bean - Live in London <br/>
-                        Christina Bianco - UK Tour <br/>
-                        Tonight From The West End - UK Concert Tour | Orchestra: British Sinfonietta | <br/>
-                        Best of Musical Starnights - German Tour <br/>
-                        Vanara The Musical - Original Workshop <br/>
-                        Save The Last Dance For Me - UK Tour
+                        <span>
+                            We Will Rock You - Royal Caribbean International
+                        </span>
+                        <span>
+                            Grease The Musical - Royal Caribbean International
+                        </span>
+                        <span>
+                            Glamis Prom - Glamis Castle <br className="mobile"/>| Orchestra: British Sinfonietta |
+                        </span>
+                        <span>
+                            Broken Strings - Celebrity Cruises International
+                        </span>
+                        <span>
+                            Eden Espinosa - Live In London
+                        </span>
+                        <span>
+                            Shoshana Bean - Live in London
+                        </span>
+                        <span>
+                            Christina Bianco - UK Tour
+                        </span>
+                        <span>
+                            Tonight From The West End - UK Concert Tour <br className="mobile"/> | Orchestra: British Sinfonietta |
+                        </span>
+                        <span>
+                            Best of Musical Starnights - German Tour
+                        </span>
+                        <span>
+                            Vanara The Musical - Original Workshop
+                        </span>
+                        <span>
+                            Save The Last Dance For Me - UK Tour
+                        </span>
 
                     </p>
                     <p><b>Performing:</b></p>
                     <p>
-                        John Wilson Orchestra - Music of MGM -  Royal Albert Hall / UK Tour <br/>
-                        BBC Proms 2016/2017/2018 - Royal Albert Hall <br/>
-                        Music Of Danny Elfman & Tim Burton - Royal Albert Hall / UK Tour <br/>
-                        Wicked The Musical - Apollo Victoria, West End <br/>
-                        Les Miserables 20th Anniversary - Queens Theatre, West End
-
+                        <span>
+                            John Wilson Orchestra - Music of MGM -  Royal Albert Hall / UK Tour
+                        </span>
+                        <span>
+                            BBC Proms 2016/2017/2018 - Royal Albert Hall
+                        </span>
+                        <span>
+                            Music Of Danny Elfman & Tim Burton - Royal Albert Hall / UK Tour
+                        </span>
+                        <span>
+                            Wicked The Musical - Apollo Victoria, West End
+                        </span>
+                        <span>
+                            Les Miserables 20th Anniversary - Queens Theatre, West End
+                        </span>
 
                     </p>
                 </div>

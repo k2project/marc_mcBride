@@ -116,6 +116,9 @@ section{
     cursor: pointer;
 
 }
+.mobile{
+    display: none;
+}
 @include desktop-sm{
     .wrapper{
         width: 100%;
@@ -136,6 +139,9 @@ section{
 
 }
 @include mobile{
+    .mobile{
+        // display: block;
+    }
     .wrapper{
         padding: 12rem 8rem 12rem;
     }
