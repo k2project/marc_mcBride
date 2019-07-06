@@ -19,7 +19,7 @@ export default function Top (){
                 <div className="Top__content">
                     <h1>MARC <br/>McBRIDE</h1>
                     <h2>Music Director</h2>
-                    <p>Coffee & Dogs lover. <br/>Health & Fitness junkie. Traveller.</p>
+                    <p>Coffee lover. Dog lover. <br/>Health & Fitness junkie. Traveller.</p>
                 </div>
 
             </div>

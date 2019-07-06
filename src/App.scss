@@ -100,8 +100,22 @@ section{
     color: $color_theme;
     padding-right: 10rem;
 }
+.btn__box{
+    // text-align: right;
+    text-align: center;
+    grid-column: 2;
+}
+.btn{
+    display: inline-block;
+    width: 25rem;
+    border: solid .1rem crimson;
+    color: crimson;
+    padding: 1rem ;
+    text-align: center;
+    margin: 3rem 0 0;
+    cursor: pointer;
 
-
+}
 @include desktop-sm{
     .wrapper{
         width: 100%;

@@ -4,8 +4,6 @@ export const media = [
         role:'Music Director ',
         collaborators:null,
         img:'garcia.jpg',
-        link:'https://vimeo.com/344413403',
-        embed:'https://player.vimeo.com/video/344413403',
         video:'AdamGarcia'
     },
     {
@@ -13,8 +11,6 @@ export const media = [
         role:'Music Director ',
         collaborators:null,
         img:'GlamisProm.jpg',
-        link:'https://vimeo.com/344073788',
-        embed:'https://player.vimeo.com/video/344073788',
         video:'GlamisProm'
     },
     {
@@ -22,8 +18,6 @@ export const media = [
         role:'Music Director ',
         collaborators:null,
         img:'EdenEspinosa.jpg',
-        link:'https://vimeo.com/343944431',
-        embed:'https://player.vimeo.com/video/343944431',
         video:'EdenEspinosa'
     },
     {
@@ -31,8 +25,6 @@ export const media = [
         role:'Music Creation & Supervision',
         collaborators:'Nick Len, Gianluca Cucchiara, Nick Pinchbeck ',
         img:'Cosmopolitan.jpg',
-        link:'https://vimeo.com/340920934',
-        embed:'https://player.vimeo.com/video/340920934',
         video:'Cosmopolitan'
     },
     {
@@ -40,8 +32,6 @@ export const media = [
         role:'Music Director ',
         collaborators:null,
         img:'ClubCumming.jpg',
-        link:'https://vimeo.com/338034513',
-        embed:'https://player.vimeo.com/video/338034513',
         video:'ClubCumming'
     },
     {
@@ -49,8 +39,6 @@ export const media = [
         role:'Music Supervision',
         collaborators:null,
         img:'Vanara.jpg',
-        link:'https://vimeo.com/335234865',
-        embed:'https://player.vimeo.com/video/335234865',
         video:'Vanara'
     },
     {
@@ -58,8 +46,6 @@ export const media = [
         role:'Music Director',
         collaborators:null,
         img:'Grease.jpg',
-        link:'https://vimeo.com/336550111',
-        embed:'https://player.vimeo.com/video/336550111',
         video:'Grease'
     },
     {
@@ -67,8 +53,6 @@ export const media = [
         role:'Music Supervision',
         collaborators:'Nick Len ',
         img:'Cilla.jpg',
-        link:'https://vimeo.com/335239029',
-        embed:'https://player.vimeo.com/video/335239029',
         video:'Cilla'
     },
     {
@@ -76,26 +60,21 @@ export const media = [
         role:'Music Director ',
         collaborators:null,
         img:'ShoshanaLive.jpg',
-        link:'https://vimeo.com/335236185',
-        embed:'https://player.vimeo.com/video/335236185',
         video:'ShoshanaLive'
     },
     {
-        title:'Shoshana Bean & Eva Noblezada',
+        title:'Broken Strings - Celebrity Cruises International',
         role:'Music Director ',
-        collaborators:null,
-        img:'S&E.jpg',
-        link:'https://vimeo.com/335244275',
-        embed:'https://player.vimeo.com/video/335244275',
-        video:'ShoshanaAndEva'
+        collaborators:'Robert Wickes, Nick Pinchbeck',
+        img:'BrokenStrings.jpg',
+        video:'BrokenStrings'
     },
+
     {
         title:'Carrie Hope Fletcher’s Debut Album',
         role:'Music Supervision',
         collaborators:'Tom Foskett-Barnes ',
         img:'CarrieHopeFletcher.jpg',
-        link:'https://vimeo.com/335233973',
-        embed:'https://player.vimeo.com/video/335233973',
         video:'CarrieHopeFletcher'
     },
     {
@@ -103,9 +82,14 @@ export const media = [
         role:'Music Creation & Supervision',
         collaborators:'Paul Ooi and Nick Len',
         img:'Maxx.jpg',
-        link:'https://vimeo.com/336557512',
-        embed:'https://player.vimeo.com/video/336557512',
         video:'Maxx'
+    },
+    {
+        title:'Shoshana Bean & Eva Noblezada',
+        role:'Music Director ',
+        collaborators:null,
+        img:'S&E.jpg',
+        video:'ShoshanaAndEva'
     },
 
 ]

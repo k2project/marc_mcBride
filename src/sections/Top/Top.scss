@@ -62,6 +62,7 @@
 @include mobile{
     .Top{
         padding-left: 4rem;
+        min-height: 50rem;
 
         h1{
             font-size: 4rem;
@@ -74,7 +75,7 @@
         }
     }
     .Top .cover.bg{
-        background-position: 50% top;
+        background-position: 55% top;
 
     }
 
@@ -85,4 +86,5 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
 }

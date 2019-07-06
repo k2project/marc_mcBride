@@ -1,23 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Media.scss';
 import {media} from './../../api/media';
 import playBtn from './../../media/icons/playBtn.png';
 
 let videoInt = null;
 export default function Media (){
-    const mediaBox = media.map(video=>displayMedia(video))
+    const [allMedia, setAllMediaTrue] = useState(false);
+    const mediaBox12 = media.slice(0,12).map(video=>displayMedia(video))
+    console.log(media.length)
+    const mediaBoxRemaining = media.slice(12,).map(video=>displayMedia(video))
     return(
         <section className="Media" id="media">
             <div className="wrapper">
                 <div className="section__title">Media</div>
                 <div className="section__content">
-                    {mediaBox}
+                    {mediaBox12}
+                    {allMedia && mediaBoxRemaining}
                 </div>
+                {!allMedia && <div onClick={()=>{setAllMediaTrue(true)}} className="btn__box"><span className="btn">+{media.length-12} more</span></div>}
 
             </div>
         </section>
     )
 };
+function showAllMedia(e,cb){
+    e.target.remove();
+    // cb(true);
+}
 function displayMedia(el){
     const img = el.img? el.img :'marc.png'
     const bg = require('./../../media/imgs/'+img);
