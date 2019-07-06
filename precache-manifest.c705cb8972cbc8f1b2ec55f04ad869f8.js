@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "a015a08a891f4c161bc720c36676b8fe",
-    "url": "/marc_mcBride/static/media/EdenEspinosa.a015a08a.jpg"
+    "revision": "e16dde7ad0664aed5c5eb58feb9632f5",
+    "url": "/marc_mcBride/static/media/Cosmopolitan.e16dde7a.jpg"
   },
   {
-    "revision": "63bb11d67e8de62e031e",
-    "url": "/marc_mcBride/static/css/main.2fa7c587.chunk.css"
+    "revision": "cc4085a43cf4f2b88e5c",
+    "url": "/marc_mcBride/static/css/main.c9f842db.chunk.css"
   },
   {
     "revision": "e635ca07a8e52bcb4f96",
     "url": "/marc_mcBride/static/js/runtime~main.fc873a1f.js"
   },
   {
-    "revision": "f4bc15defa468c97f9a3",
-    "url": "/marc_mcBride/static/js/2.3953db57.chunk.js"
+    "revision": "916d4f5d0153de8f1a49",
+    "url": "/marc_mcBride/static/js/2.bae9856b.chunk.js"
   },
   {
     "revision": "dbbc02538afafdc892312d8e275304a4",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "74aa358f209aa4523d397dca458ebee9",
     "url": "/marc_mcBride/static/media/mmb.74aa358f.jpg"
+  },
+  {
+    "revision": "27817f092d1e724583b44689a1959771",
+    "url": "/marc_mcBride/static/media/BrokenStrings.27817f09.jpg"
   },
   {
     "revision": "c497356a58fb5d91eab79f229af5d105",
@@ -36,12 +40,12 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/ClubCumming.43e28b2d.jpg"
   },
   {
-    "revision": "e16dde7ad0664aed5c5eb58feb9632f5",
-    "url": "/marc_mcBride/static/media/Cosmopolitan.e16dde7a.jpg"
+    "revision": "cc4085a43cf4f2b88e5c",
+    "url": "/marc_mcBride/static/js/main.952a7ef8.chunk.js"
   },
   {
-    "revision": "63bb11d67e8de62e031e",
-    "url": "/marc_mcBride/static/js/main.98747e59.chunk.js"
+    "revision": "a015a08a891f4c161bc720c36676b8fe",
+    "url": "/marc_mcBride/static/media/EdenEspinosa.a015a08a.jpg"
   },
   {
     "revision": "ac5909839a574c332dfc99dd973351b3",
@@ -72,11 +76,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/garcia.97aebef9.jpg"
   },
   {
-    "revision": "109768284bfb2be4bec2ecf344f3c772",
-    "url": "/marc_mcBride/static/media/mmb - Copy.10976828.jpg"
-  },
-  {
-    "revision": "e6f7c9eea4a154bc87e50d5cb2558d2a",
+    "revision": "aa342b7b1df1543b204df1376ccf31d0",
     "url": "/marc_mcBride/index.html"
   }
 ];
