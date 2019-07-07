@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e16dde7ad0664aed5c5eb58feb9632f5",
-    "url": "/marc_mcBride/static/media/Cosmopolitan.e16dde7a.jpg"
+    "revision": "43e28b2dd4d112874bcc446d8d31f8f8",
+    "url": "/marc_mcBride/static/media/ClubCumming.43e28b2d.jpg"
   },
   {
-    "revision": "f33d9416400015418591",
-    "url": "/marc_mcBride/static/css/main.f679238c.chunk.css"
+    "revision": "7e8260ae2ffbcb5945f3",
+    "url": "/marc_mcBride/static/css/main.8ff3eec2.chunk.css"
   },
   {
     "revision": "e635ca07a8e52bcb4f96",
@@ -24,6 +24,10 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/mmb.74aa358f.jpg"
   },
   {
+    "revision": "4c9c79ed8b8792671459e7a73b32a2d2",
+    "url": "/marc_mcBride/static/media/mmbLandscape.4c9c79ed.jpg"
+  },
+  {
     "revision": "27817f092d1e724583b44689a1959771",
     "url": "/marc_mcBride/static/media/BrokenStrings.27817f09.jpg"
   },
@@ -36,12 +40,12 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/Cilla.d5fa82c8.jpg"
   },
   {
-    "revision": "43e28b2dd4d112874bcc446d8d31f8f8",
-    "url": "/marc_mcBride/static/media/ClubCumming.43e28b2d.jpg"
+    "revision": "7e8260ae2ffbcb5945f3",
+    "url": "/marc_mcBride/static/js/main.7fbbd965.chunk.js"
   },
   {
-    "revision": "f33d9416400015418591",
-    "url": "/marc_mcBride/static/js/main.364fd343.chunk.js"
+    "revision": "e16dde7ad0664aed5c5eb58feb9632f5",
+    "url": "/marc_mcBride/static/media/Cosmopolitan.e16dde7a.jpg"
   },
   {
     "revision": "a015a08a891f4c161bc720c36676b8fe",
@@ -76,7 +80,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/garcia.97aebef9.jpg"
   },
   {
-    "revision": "4f8eed18512a47b6e8311d945f4db610",
+    "revision": "80422a3b7755daf09ffcec166d60a0d2",
     "url": "/marc_mcBride/index.html"
   }
 ];

@@ -1,15 +1,15 @@
 {
-  "main.css": "/marc_mcBride/static/css/main.f679238c.chunk.css",
-  "main.js": "/marc_mcBride/static/js/main.364fd343.chunk.js",
-  "main.js.map": "/marc_mcBride/static/js/main.364fd343.chunk.js.map",
+  "main.css": "/marc_mcBride/static/css/main.8ff3eec2.chunk.css",
+  "main.js": "/marc_mcBride/static/js/main.7fbbd965.chunk.js",
+  "main.js.map": "/marc_mcBride/static/js/main.7fbbd965.chunk.js.map",
   "runtime~main.js": "/marc_mcBride/static/js/runtime~main.fc873a1f.js",
   "runtime~main.js.map": "/marc_mcBride/static/js/runtime~main.fc873a1f.js.map",
   "static/js/2.bae9856b.chunk.js": "/marc_mcBride/static/js/2.bae9856b.chunk.js",
   "static/js/2.bae9856b.chunk.js.map": "/marc_mcBride/static/js/2.bae9856b.chunk.js.map",
   "index.html": "/marc_mcBride/index.html",
-  "precache-manifest.dc3cc23a4138493c845c1ca65055ad4f.js": "/marc_mcBride/precache-manifest.dc3cc23a4138493c845c1ca65055ad4f.js",
+  "precache-manifest.e20cc84e01cc2a748446fad0e7f991bd.js": "/marc_mcBride/precache-manifest.e20cc84e01cc2a748446fad0e7f991bd.js",
   "service-worker.js": "/marc_mcBride/service-worker.js",
-  "static/css/main.f679238c.chunk.css.map": "/marc_mcBride/static/css/main.f679238c.chunk.css.map",
+  "static/css/main.8ff3eec2.chunk.css.map": "/marc_mcBride/static/css/main.8ff3eec2.chunk.css.map",
   "static/media/BrokenStrings.jpg": "/marc_mcBride/static/media/BrokenStrings.27817f09.jpg",
   "static/media/CarrieHopeFletcher.jpg": "/marc_mcBride/static/media/CarrieHopeFletcher.c497356a.jpg",
   "static/media/Cilla.jpg": "/marc_mcBride/static/media/Cilla.d5fa82c8.jpg",
@@ -24,5 +24,6 @@
   "static/media/Vanara.jpg": "/marc_mcBride/static/media/Vanara.686fe693.jpg",
   "static/media/garcia.jpg": "/marc_mcBride/static/media/garcia.97aebef9.jpg",
   "static/media/Contact.scss": "/marc_mcBride/static/media/mmb.74aa358f.jpg",
+  "static/media/mmbLandscape.jpg": "/marc_mcBride/static/media/mmbLandscape.4c9c79ed.jpg",
   "static/media/playBtn.png": "/marc_mcBride/static/media/playBtn.dbbc0253.png"
 }
