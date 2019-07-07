@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/Cosmopolitan.e16dde7a.jpg"
   },
   {
-    "revision": "d2545b5c8659beca4cd4",
-    "url": "/marc_mcBride/static/css/main.f679238c.chunk.css"
+    "revision": "2dfdda51c3f3ed2df7e4",
+    "url": "/marc_mcBride/static/css/main.a190c056.chunk.css"
   },
   {
     "revision": "e635ca07a8e52bcb4f96",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/ClubCumming.43e28b2d.jpg"
   },
   {
-    "revision": "d2545b5c8659beca4cd4",
+    "revision": "2dfdda51c3f3ed2df7e4",
     "url": "/marc_mcBride/static/js/main.6fffdc70.chunk.js"
   },
   {
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/marc_mcBride/static/media/garcia.97aebef9.jpg"
   },
   {
-    "revision": "589100cfeb0d0b28a862a66378d228cc",
+    "revision": "4ca66bffc9726e30678abad91f128fda",
     "url": "/marc_mcBride/index.html"
   }
 ];
