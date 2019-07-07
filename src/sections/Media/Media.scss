@@ -216,3 +216,32 @@
         grid-auto-rows: 20rem;
     }
 }
+//landscape and mobile
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .player{
+        video{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    .player__title{
+        position: absolute;
+        top: 2rem;
+         left: 2rem;
+    }
+    .player__ctrls{
+        position: absolute;
+        z-index: 3;
+        bottom: 1.4rem;
+        width: 100%;
+
+    }
+    .player .close{
+        top: 0;
+        right: 2rem;
+        font-size: 4rem;
+    }
+}

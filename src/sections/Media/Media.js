@@ -51,12 +51,12 @@ function getVideo(el){
         const close = '<div class="close">&times;</div>';
 
         ////DEVELOPEMENT
-        // const video = '<video width="640" height="360" autoplay><source src="/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        // const video = '<video width="640" height="360" autoplay playsinline><source src="/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
 
         ////GITHUB PAGES
-        const video = '<video width="640" height="360" autoplay><source src="/marc_mcBride/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        const video = '<video width="640" height="360" autoplay playsinline><source src="/marc_mcBride/Grease.mp4" type="video/mp4" >Your browser does not support the video tag.</video>';
         ////WEBSITE
-        // const video = '<video width="640" height="360" autoplay><source src="./videos/'+el.video+'.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+        // const video = '<video width="640" height="360" autoplay playsinline><source src="./videos/'+el.video+'.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
         const ctrls = '<div class="player__ctrls"><div class="player__btn paused"></div><div class="player__progress"><span></span></div><div class="player_timing"></div></div>';
         const title = '<div class = "player__title"><p>'+el.title+'</p></div>';
 

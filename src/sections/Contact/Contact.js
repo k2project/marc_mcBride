@@ -24,7 +24,7 @@ export default function Contact (){
                     </p>
                     <p>
                         Get In Touch Directly<br/>
-                        <a href="mail@marcmcbride.co.uk ?Subject=Message Via Your Website" target="_blank" rel="noopener noreferrer">mail@marcmcbride.co.uk </a>
+                        <a href="mailto:mail@marcmcbride.co.uk ?Subject=Message Via Your Website" target="_blank" rel="noopener noreferrer">mail@marcmcbride.co.uk </a>
 
                     </p>
                     <div className="SocialMedia">

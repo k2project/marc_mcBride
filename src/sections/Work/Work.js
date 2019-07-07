@@ -13,19 +13,19 @@ export default function Work (){
                             Davines World Wide Hair Tour 2019 -The Harpa, Iceland <br className="mobile"/> | Orchestra: Icelandic Symphony |
                         </span>
                         <span>
-                            Cilla The Musical - UK Tour <br className="mobile"/> <i>( Nominated Best Musical What's On Stage Awards )</i>
+                            Cilla The Musical - UK Tour <i>( Nominated Best Musical What's On Stage Awards )</i>
                         </span>
                         <span>
                             Dreamboats & Petticoats 10th Anniversary - UK Tour
                         </span>
                         <span>
-                            Carrie Hope Fletcher’s Debut Album - When The Curtain Falls <br className="mobile"/> <i>( Number 1 in the iTunes Download Charts )</i>
+                            Carrie Hope Fletcher’s Debut Album - When The Curtain Falls  <i>( Number 1 in the iTunes Download Charts )</i>
                         </span>
                         <span>
                             Vanara The Musical - Concept Album
                         </span>
                         <span>
-                            Life - Celebrity Cruises International <br className="mobile"/> <i>( Winner Travel Weekly Gold Award in the USA within the ‘Premium Ship Entertainment’ )</i>
+                            Life - Celebrity Cruises International  <i>( Winner Travel Weekly Gold Award in the USA within the ‘Premium Ship Entertainment’ )</i>
                         </span>
                         <span>
                             Cosmopolitan- Celebrity Cruises International
@@ -34,7 +34,7 @@ export default function Work (){
                             Maxx - Celebrity Cruises International
                         </span>
                         <span>
-                            P&O Cruises International <br className="mobile"/> (In association with the the TCB Group, Gareth Walker & Natalie Lowe)
+                            P&O Cruises International (In association with the the TCB Group, Gareth Walker & Natalie Lowe)
                         </span>
                     </p>
                     <p><b>Music Direction:</b></p>
