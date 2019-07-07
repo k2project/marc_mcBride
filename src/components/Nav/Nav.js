@@ -25,7 +25,7 @@ export default function Page (props){
                     <a href="#about" onClick={closeMenu}>About</a>
                     <a href="#media" onClick={closeMenu}>Media</a>
                     <a href="#work" onClick={closeMenu}>Work</a>
-                    <a href="#contact" onClick={closeMenu}>Contact</a>
+                    <a href="#contact" onClick={handleContactClick}>Contact</a>
                 </div>
             </div>
         </div>
@@ -92,15 +92,32 @@ function handleNavOnScroll(){
                      arr[arr.length-1].style.color = theme_color;
              })
         }
-        
+
     })
 
 }
 function showMenu(){
     document.querySelector('.Nav').classList.toggle('open');
 }
+
 function closeMenu(){
     if(document.querySelector('.Nav').classList.contains('open')){
         document.querySelector('.Nav').classList.remove('open');
     }
 }
+
+ function handleContactClick(){
+     showMenu();
+     const pArr = document.querySelectorAll('.Contact .section__content p');
+     pArr.forEach((p,index)=>{
+        p.style.opacity = 0;
+        p.style.left = '10rem';
+        setTimeout(()=>{
+             p.style.opacity = 1;
+             p.style.left = 0;
+             p.style.transition = '.5s ease-out';
+        },index*500 + 500)
+    });
+
+
+ }

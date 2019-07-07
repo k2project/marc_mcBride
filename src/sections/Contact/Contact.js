@@ -27,11 +27,11 @@ export default function Contact (){
                         <a href="mailto:mail@marcmcbride.co.uk ?Subject=Message Via Your Website" target="_blank" rel="noopener noreferrer">mail@marcmcbride.co.uk </a>
 
                     </p>
-                    <div className="SocialMedia">
+                    <p className="SocialMedia">
                         <img src={linkedin} alt="linkedin"/>
                         <img src={facebook} alt="facebook"/>
                         <img src={instagram} alt="instagram"/>
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>
