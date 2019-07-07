@@ -39,7 +39,7 @@
     }
 }
 .Top__content{
-    transition: .5s;
+    // transition: .5s;
 }
 
 //max 1200
@@ -60,6 +60,7 @@
 }
 //max 768
 @include mobile{
+
     .Top{
         padding-left: 4rem;
         min-height: 50rem;
@@ -88,3 +89,6 @@
     }
 
 }
+
+//landscape and mobile
+@media only screen and (max-width: 768px) and (orientation: landscape) {}
