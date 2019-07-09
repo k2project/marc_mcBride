@@ -91,4 +91,10 @@
 }
 
 //landscape and mobile
-@media only screen and (max-width: 768px) and (orientation: landscape) {}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    
+    .Top .cover.bg{
+        background-image: url('./../../media/imgs/mmbLandscape.jpg');
+        background-position: right top;
+    }
+}

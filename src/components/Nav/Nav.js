@@ -112,11 +112,12 @@ function closeMenu(){
      pArr.forEach((p,index)=>{
         p.style.opacity = 0;
         p.style.left = '10rem';
+        p.style.transition = 'none ';
         setTimeout(()=>{
              p.style.opacity = 1;
              p.style.left = 0;
              p.style.transition = '.5s ease-out';
-        },index*500 + 500)
+        },index*500 + 1000)
     });
 
 

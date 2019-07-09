@@ -12,7 +12,7 @@
     color: #fff;
     background: $color_theme;
     text-align: center;
-    margin: .2rem;
+    margin: .5rem;
     overflow: hidden;
     font-size: 1.1rem;
 
@@ -44,6 +44,7 @@
         width: 9rem;
         margin: auto;
         cursor: pointer;
+        outline: none;
     }
     top: 100%;
 }
@@ -159,7 +160,7 @@
         position: absolute;
         left: 0;
         height: 100%;
-        background: crimson;
+        background: $color_red;
         width: 0;
         border-radius: .5rem;
         // transition: .25s;
