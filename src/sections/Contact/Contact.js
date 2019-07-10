@@ -8,7 +8,7 @@ import instagram from './../../media/icons/instagram.png'
 export default function Contact (){
     return(
         <section className="Contact" id="contact">
-            <div className="Contact_bg"></div>
+            {/* <div className="Contact_bg"></div> */}
             <div className="cover"></div>
             <div className="wrapper">
                 <footer>

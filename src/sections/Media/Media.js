@@ -31,7 +31,7 @@ function displayMedia(el){
     const img = el.img? el.img :'marc.png'
     const bg = require('./../../media/imgs/'+img);
     return (
-        <div className="media" key={el.title} >
+        <div className="media" key={el.title} onClick="">
             <div className="cover media__bg" style={{backgroundImage:"url("+bg+")"}} ></div>
             <div className="media__text cover">
                 {el.title && <div className="media__title"><b>{el.title}</b></div>}
