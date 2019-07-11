@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './Media.scss';
 import {media} from './../../api/media';
 import playBtn from './../../media/icons/playBtn.png';
@@ -23,10 +23,7 @@ export default function Media (){
         </section>
     )
 };
-function showAllMedia(e,cb){
-    e.target.remove();
-    // cb(true);
-}
+
 function displayMedia(el){
     const img = el.img? el.img :'marc.png'
     const bg = require('./../../media/imgs/'+img);
