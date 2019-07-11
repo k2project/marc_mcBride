@@ -17,8 +17,9 @@
     font-size: 1.1rem;
 
 }
-.media__text{
+.media__text.cover{
     padding: 3rem;
+    transition: .3s;
 }
 .media__title{
     padding-bottom: .8rem;
@@ -32,38 +33,39 @@
     padding: 0 1rem;
     font-size: 1rem;
 }
-.media__bg{
+.media__bg.cover{
     background-size: cover;
     background-position: center;
     opacity: .3;
     transition: .5s;
 }
 
-.cover.media__play{
+.media__play.cover{
+    top: 100%;
+    transition: .5s ease-out;
     img{
         width: 9rem;
         margin: auto;
         cursor: pointer;
         outline: none;
     }
-    top: 100%;
 }
-.media:hover{
-    .media__bg{
-        opacity: .8;
-        transition: .7s;
-        transform: scale(1.2);
-    }
-    .media__text{
-        top: -50%;
-        opacity: 0;
-        transition: .5s;
-    }
-    .cover.media__play{
-        top: 0;
-        transition: .5s ease-in-out;
-    }
-}
+// .media:hover{
+//     .media__bg.cover{
+//         opacity: .8;
+//         transition: .7s;
+//         transform: scale(1.2);
+//     }
+//     .media__text.cover{
+//         top: -50%;
+//         opacity: 0;
+//         transition: .5s;
+//     }
+//     .media__play.cover{
+//         top: 0;
+//         transition: .5s ease-in-out;
+//     }
+// }
 
 //=====================
 //========player=======

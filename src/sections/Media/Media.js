@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Media.scss';
 import {media} from './../../api/media';
 import playBtn from './../../media/icons/playBtn.png';
@@ -7,8 +7,8 @@ let videoInt = null;
 export default function Media (){
     const [allMedia, setAllMediaTrue] = useState(false);
     const mediaBox12 = media.slice(0,12).map(video=>displayMedia(video))
-    console.log(media.length)
     const mediaBoxRemaining = media.slice(12,).map(video=>displayMedia(video))
+
     return(
         <section className="Media" id="media">
             <div className="wrapper">
@@ -31,8 +31,8 @@ function displayMedia(el){
     const img = el.img? el.img :'marc.png'
     const bg = require('./../../media/imgs/'+img);
     return (
-        <div className="media" key={el.title} onClick="">
-            <div className="cover media__bg" style={{backgroundImage:"url("+bg+")"}} ></div>
+        <div className="media" key={el.title} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className="media__bg cover" style={{backgroundImage:"url("+bg+")"}} ></div>
             <div className="media__text cover">
                 {el.title && <div className="media__title"><b>{el.title}</b></div>}
                 {el.role && <div className="media__role">{el.role}</div>}
@@ -44,6 +44,30 @@ function displayMedia(el){
         </div>
     )
 }
+
+function handleMouseEnter(e){
+    const media = e.target.closest('.media')
+    const bg = media.firstElementChild;
+    bg.style.opacity = 0.8;
+    bg.style.transform = 'scale(1.2)';
+    const txt = bg.nextElementSibling;
+    txt.style.top = '-50%';
+    txt.style.opacity = 0;
+    const play = media.lastElementChild;
+    play.style.top = 0;
+}
+function handleMouseLeave(e){
+    const media = e.target.closest('.media')
+    const bg = media.firstElementChild;
+    bg.style.opacity = 0.3;
+    bg.style.transform = 'scale(1)';
+    const txt = bg.nextElementSibling;
+    txt.style.top = 0;
+    txt.style.opacity = 1;
+    const play = media.lastElementChild;
+    play.style.top = '100%';
+}
+
 function getVideo(el){
     //to stop dbl click to create 2 players
     if(!document.querySelector('.player')){
