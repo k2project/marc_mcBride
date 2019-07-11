@@ -42,7 +42,7 @@ function displayMedia(el){
     )
 }
 
-function handleMouseOver(e){
+function handleMouseEnter(e){
     const media = e.target.closest('.media')
     const bg = media.firstElementChild;
     bg.style.opacity = 0.8;
@@ -53,7 +53,7 @@ function handleMouseOver(e){
     const play = media.lastElementChild;
     play.style.top = 0;
 }
-function handleMouseOut(e){
+function handleMouseLeave(e){
     const media = e.target.closest('.media')
     const bg = media.firstElementChild;
     bg.style.opacity = 0.3;
