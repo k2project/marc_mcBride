@@ -28,7 +28,7 @@ function displayMedia(el){
     const img = el.img? el.img :'marc.png'
     const bg = require('./../../media/imgs/'+img);
     return (
-        <div className="media" key={el.title} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="media" key={el.title} onMouseOver={handleMouseEnter} onMouseOut={handleMouseLeave}>
             <div className="media__bg cover" style={{backgroundImage:"url("+bg+")"}} ></div>
             <div className="media__text cover">
                 {el.title && <div className="media__title"><b>{el.title}</b></div>}
@@ -36,13 +36,13 @@ function displayMedia(el){
                 {el.collaborators && <div className="media__collaborators"><small>Collaborators: {el.collaborators}</small></div>}
             </div>
             <div className="media__play cover">
-                <img src={playBtn} onClick={()=>getVideo(el)} alt="play"/>
+                <img src={playBtn} onClick={e=>getVideo(e,el)} alt="play"/>
             </div>
         </div>
     )
 }
 
-function handleMouseEnter(e){
+function handleMouseOver(e){
     const media = e.target.closest('.media')
     const bg = media.firstElementChild;
     bg.style.opacity = 0.8;
@@ -53,7 +53,7 @@ function handleMouseEnter(e){
     const play = media.lastElementChild;
     play.style.top = 0;
 }
-function handleMouseLeave(e){
+function handleMouseOut(e){
     const media = e.target.closest('.media')
     const bg = media.firstElementChild;
     bg.style.opacity = 0.3;
@@ -65,7 +65,8 @@ function handleMouseLeave(e){
     play.style.top = '100%';
 }
 
-function getVideo(el){
+function getVideo(e,el){
+    handleMouseLeave(e);
     //to stop dbl click to create 2 players
     if(!document.querySelector('.player')){
         const player = document.createElement('div');

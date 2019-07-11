@@ -50,22 +50,22 @@
         outline: none;
     }
 }
-// .media:hover{
-//     .media__bg.cover{
-//         opacity: .8;
-//         transition: .7s;
-//         transform: scale(1.2);
-//     }
-//     .media__text.cover{
-//         top: -50%;
-//         opacity: 0;
-//         transition: .5s;
-//     }
-//     .media__play.cover{
-//         top: 0;
-//         transition: .5s ease-in-out;
-//     }
-// }
+.media:hover{
+    .media__bg.cover{
+        opacity: .8;
+        transition: .7s;
+        transform: scale(1.2);
+    }
+    .media__text.cover{
+        top: -50%;
+        opacity: 0;
+        transition: .5s;
+    }
+    .media__play.cover{
+        top: 0;
+        transition: .5s ease-in-out;
+    }
+}
 
 //=====================
 //========player=======
