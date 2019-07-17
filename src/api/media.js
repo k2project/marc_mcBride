@@ -86,12 +86,12 @@ export const media = [
         img:'Cosmopolitan.jpg',
         video:'Cosmopolitan'
     },
-    {
-        title:'Shoshana Bean & Eva Noblezada',
-        role:'Music Director ',
-        collaborators:null,
-        img:'S&E.jpg',
-        video:'ShoshanaAndEva'
-    },
+    // {
+    //     title:'Shoshana Bean & Eva Noblezada',
+    //     role:'Music Director ',
+    //     collaborators:null,
+    //     img:'S&E.jpg',
+    //     video:'ShoshanaAndEva'
+    // },
 
 ]
