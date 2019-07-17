@@ -9,9 +9,9 @@ export default function Media (){
     const [allMedia, setAllMediaTrue] = useState(false);
     const mediaBox12 = media.slice(0,numOfMedia).map(video=>displayMedia(video))
     const mediaBoxRemaining = media.slice(numOfMedia,).map(video=>displayMedia(video))
-
+    const all = allMedia? 'all-media':'';
     return(
-        <section className="Media" id="media">
+        <section className={"Media "+all} id="media">
             <div className="wrapper">
                 <div className="section__title">Media</div>
                 <div className="section__content">

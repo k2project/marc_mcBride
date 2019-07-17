@@ -1,11 +1,5 @@
 export const media = [
-    // {
-    //     title:'Adam Garcia - Tonight From The West End Concert Tour ',
-    //     role:'Music Director ',
-    //     collaborators:null,
-    //     img:'garcia.jpg',
-    //     video:'AdamGarcia'
-    // },
+
     {
         title:'Glamis Prom - Glamis Castle ',
         role:'Music Director ',
@@ -13,13 +7,7 @@ export const media = [
         img:'GlamisProm.jpg',
         video:'GlamisProm'
     },
-    // {
-    //     title:'Eden Espinosa - Live In London',
-    //     role:'Music Director ',
-    //     collaborators:null,
-    //     img:'EdenEspinosa.jpg',
-    //     video:'EdenEspinosa'
-    // },
+
 
     {
         title:'Club Cumming with Alan Cumming & Christina Bianco',
@@ -65,13 +53,7 @@ export const media = [
         img:'BrokenStrings.jpg',
         video:'BrokenStrings'
     },
-    // {
-    //     title:'Maxx - Celebrity Cruises International',
-    //     role:'Music Creation & Supervision',
-    //     collaborators:'Paul Ooi and Nick Len',
-    //     img:'Maxx.jpg',
-    //     video:'Maxx'
-    // },
+
     {
         title:'Grease The Musical',
         role:'Music Director',
@@ -86,12 +68,33 @@ export const media = [
         img:'Cosmopolitan.jpg',
         video:'Cosmopolitan'
     },
-    // {
-    //     title:'Shoshana Bean & Eva Noblezada',
-    //     role:'Music Director ',
-    //     collaborators:null,
-    //     img:'S&E.jpg',
-    //     video:'ShoshanaAndEva'
-    // },
+    {
+        title:'Adam Garcia - Tonight From The West End Concert Tour ',
+        role:'Music Director ',
+        collaborators:null,
+        img:'garcia.jpg',
+        video:'AdamGarcia'
+    },
+    {
+        title:'Eden Espinosa - Live In London',
+        role:'Music Director ',
+        collaborators:null,
+        img:'EdenEspinosa.jpg',
+        video:'EdenEspinosa'
+    },
+    {
+        title:'Maxx - Celebrity Cruises International',
+        role:'Music Creation & Supervision',
+        collaborators:'Paul Ooi and Nick Len',
+        img:'Maxx.jpg',
+        video:'Maxx'
+    },
+    {
+        title:'Shoshana Bean & Eva Noblezada',
+        role:'Music Director ',
+        collaborators:null,
+        img:'S&E.jpg',
+        video:'ShoshanaAndEva'
+    },
 
 ]
