@@ -4,10 +4,11 @@ import {media} from './../../api/media';
 import playBtn from './../../media/icons/playBtn.png';
 
 let videoInt = null;
+let numOfMedia = 9;
 export default function Media (){
     const [allMedia, setAllMediaTrue] = useState(false);
-    const mediaBox12 = media.slice(0,12).map(video=>displayMedia(video))
-    const mediaBoxRemaining = media.slice(12,).map(video=>displayMedia(video))
+    const mediaBox12 = media.slice(0,numOfMedia).map(video=>displayMedia(video))
+    const mediaBoxRemaining = media.slice(numOfMedia,).map(video=>displayMedia(video))
 
     return(
         <section className="Media" id="media">
@@ -17,7 +18,7 @@ export default function Media (){
                     {mediaBox12}
                     {allMedia && mediaBoxRemaining}
                 </div>
-                {!allMedia && <div onClick={()=>{setAllMediaTrue(true)}} className="btn__box"><span className="btn">+{media.length-12} more</span></div>}
+                {!allMedia && media.length>numOfMedia && <div onClick={()=>{setAllMediaTrue(true)}} className="btn__box"><span className="btn"> More</span></div>}
 
             </div>
         </section>
@@ -30,7 +31,7 @@ function displayMedia(el){
     return (
         <div className="media" key={el.title} onMouseOver={handleMouseEnter} onMouseOut={handleMouseLeave}>
             <div className="media__bg cover" style={{backgroundImage:"url("+bg+")"}} ></div>
-            <div className="media__text cover">
+            <div className="media__text cover" onClick={handleMouseEnter}>
                 {el.title && <div className="media__title"><b>{el.title}</b></div>}
                 {el.role && <div className="media__role">{el.role}</div>}
                 {el.collaborators && <div className="media__collaborators"><small>Collaborators: {el.collaborators}</small></div>}

@@ -111,7 +111,7 @@ function closeMenu(){
      const pArr = document.querySelectorAll('.Contact .section__content p');
      pArr.forEach((p,index)=>{
         p.style.opacity = 0;
-        p.style.left = '10rem';
+        p.style.left = '-2rem';
         p.style.transition = 'none ';
         setTimeout(()=>{
              p.style.opacity = 1;

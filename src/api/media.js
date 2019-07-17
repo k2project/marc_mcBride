@@ -1,11 +1,11 @@
 export const media = [
-    {
-        title:'Adam Garcia - Tonight From The West End Concert Tour ',
-        role:'Music Director ',
-        collaborators:null,
-        img:'garcia.jpg',
-        video:'AdamGarcia'
-    },
+    // {
+    //     title:'Adam Garcia - Tonight From The West End Concert Tour ',
+    //     role:'Music Director ',
+    //     collaborators:null,
+    //     img:'garcia.jpg',
+    //     video:'AdamGarcia'
+    // },
     {
         title:'Glamis Prom - Glamis Castle ',
         role:'Music Director ',
@@ -13,47 +13,20 @@ export const media = [
         img:'GlamisProm.jpg',
         video:'GlamisProm'
     },
-    {
-        title:'Eden Espinosa - Live In London',
-        role:'Music Director ',
-        collaborators:null,
-        img:'EdenEspinosa.jpg',
-        video:'EdenEspinosa'
-    },
-    {
-        title:'Cosmopolitan - Celebrity Cruises International',
-        role:'Music Creation & Supervision',
-        collaborators:'Nick Len, Gianluca Cucchiara, Nick Pinchbeck ',
-        img:'Cosmopolitan.jpg',
-        video:'Cosmopolitan'
-    },
+    // {
+    //     title:'Eden Espinosa - Live In London',
+    //     role:'Music Director ',
+    //     collaborators:null,
+    //     img:'EdenEspinosa.jpg',
+    //     video:'EdenEspinosa'
+    // },
+
     {
         title:'Club Cumming with Alan Cumming & Christina Bianco',
         role:'Music Director ',
         collaborators:null,
         img:'ClubCumming.jpg',
         video:'ClubCumming'
-    },
-    {
-        title:'Vanara The Musical - Concept Album ',
-        role:'Music Supervision',
-        collaborators:null,
-        img:'Vanara.jpg',
-        video:'Vanara'
-    },
-    {
-        title:'Grease The Musical',
-        role:'Music Director',
-        collaborators:null,
-        img:'Grease.jpg',
-        video:'Grease'
-    },
-    {
-        title:'Cilla The Musical ',
-        role:'Music Supervision',
-        collaborators:'Nick Len ',
-        img:'Cilla.jpg',
-        video:'Cilla'
     },
     {
         title:'Shoshana Bean - Live In London',
@@ -63,11 +36,19 @@ export const media = [
         video:'ShoshanaLive'
     },
     {
-        title:'Broken Strings - Celebrity Cruises International',
-        role:'Music Director ',
-        collaborators:'Robert Wickes, Nick Pinchbeck',
-        img:'BrokenStrings.jpg',
-        video:'BrokenStrings'
+        title:'Vanara The Musical - Concept Album ',
+        role:'Music Supervision',
+        collaborators:null,
+        img:'Vanara.jpg',
+        video:'Vanara'
+    },
+
+    {
+        title:'Cilla The Musical ',
+        role:'Music Supervision',
+        collaborators:'Nick Len ',
+        img:'Cilla.jpg',
+        video:'Cilla'
     },
 
     {
@@ -78,11 +59,32 @@ export const media = [
         video:'CarrieHopeFletcher'
     },
     {
-        title:'Maxx - Celebrity Cruises International',
+        title:'Broken Strings - Celebrity Cruises International',
+        role:'Music Director ',
+        collaborators:'Robert Wickes, Nick Pinchbeck',
+        img:'BrokenStrings.jpg',
+        video:'BrokenStrings'
+    },
+    // {
+    //     title:'Maxx - Celebrity Cruises International',
+    //     role:'Music Creation & Supervision',
+    //     collaborators:'Paul Ooi and Nick Len',
+    //     img:'Maxx.jpg',
+    //     video:'Maxx'
+    // },
+    {
+        title:'Grease The Musical',
+        role:'Music Director',
+        collaborators:null,
+        img:'Grease.jpg',
+        video:'Grease'
+    },
+    {
+        title:'Cosmopolitan - Celebrity Cruises International',
         role:'Music Creation & Supervision',
-        collaborators:'Paul Ooi and Nick Len',
-        img:'Maxx.jpg',
-        video:'Maxx'
+        collaborators:'Nick Len, Gianluca Cucchiara, Nick Pinchbeck ',
+        img:'Cosmopolitan.jpg',
+        video:'Cosmopolitan'
     },
     {
         title:'Shoshana Bean & Eva Noblezada',
