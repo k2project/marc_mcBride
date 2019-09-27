@@ -205,8 +205,8 @@
         padding-right: 1rem;
     }
     .Media .section__title{
-        padding-left: 8rem;
-        margin-bottom: 3rem;
+        padding-left: 5rem;
+        // margin-bottom: 3rem;
     }
     .Media .section__content{
         grid-auto-rows: 18rem;
@@ -222,7 +222,7 @@
 //max480
 @include mobile-sm{
     .Media .section__title{
-        padding-left: 5rem;
+        padding-left: 2rem;
     }
     .Media .section__content{
         grid-template-columns: repeat(1, 1fr);

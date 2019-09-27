@@ -8,16 +8,21 @@ import Work from './sections/Work/Work';
 import Contact from './sections/Contact/Contact';
 
 // const t = new Date().getTime();
-// //31 Aug
-// const exp = new Date(2019, 7, 31, 0, 0, 0, 0).getTime();
-// const out = exp>t? 1 : 0;
+// //30 Sept
+// const exp = new Date(2019, 9, 30, 0, 0, 0, 0).getTime();
+// const out = exp>t? true : null;
+const out = true;
 
 export default function App (){
-    return(<div className="App Marc_McBride">
-            <Top/>
-            <About/>
-            <Media/>
-            <Work/>
-            <Contact/>
-        </div>)
+    return(
+        <div>
+            {out &&<div className="App Marc_McBride">
+                    <Top/>
+                    <About/>
+                    <Media/>
+                    <Work/>
+                    <Contact/>
+                </div>}
+        </div>
+    )
 };
