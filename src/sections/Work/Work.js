@@ -40,10 +40,10 @@ export default function Work (){
                     <p><b>Music Direction:</b></p>
                     <p>
                         <span>
-                            We Will Rock You - Royal Caribbean International
+                            We Will Rock You - Queen Theatrical Productions / RCCL
                         </span>
                         <span>
-                            Grease The Musical - Royal Caribbean International
+                            Grease The Musical - David Ian Productions / RCCL
                         </span>
                         <span>
                             Glamis Prom - Glamis Castle <br className="mobile"/>| Orchestra: British Sinfonietta |
