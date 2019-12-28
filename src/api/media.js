@@ -1,6 +1,13 @@
 export const media = [
 
     {
+        title:'We Will Rock You ',
+        role:'Music Director ',
+        collaborators:null,
+        img:'WeWillRockYou.jpg',
+        video:'WeWillRockYou'
+    },
+    {
         title:'Glamis Prom - Glamis Castle ',
         role:'Music Director ',
         collaborators:null,
