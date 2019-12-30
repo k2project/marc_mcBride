@@ -10,7 +10,8 @@ export default function About (){
                     <p>Scottish born and raised. Based between the U.K and the U.S.</p>
                     <p>Studied at The Royal Academy of Music, London. </p>
                     <p>Previously, a Bachelor of Laws (LL.B) at The University of Dundee, Scotland.</p>
-                    <p>Part-time student alongside current projects, Global MBA, The University of London.</p>
+                    {/* <p>Part-time student alongside current projects, Global MBA, The University of London.</p> */}
+                    <p>Avid language learner. </p>
                 </div>
             </div>
         </section>
