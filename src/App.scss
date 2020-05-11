@@ -1,24 +1,24 @@
 // var
-$color_theme:      #515769;
-$color_red:        crimson;
+$color_theme: #333d4c;
+$color_red: crimson;
 
 // mixins
-@mixin desktop-sm{
+@mixin desktop-sm {
     @media only screen and (max-width: 1200px) {
         @content;
     }
 }
-@mixin tablet{
+@mixin tablet {
     @media only screen and (max-width: 1024px) {
         @content;
     }
 }
-@mixin mobile{
+@mixin mobile {
     @media only screen and (max-width: 768px) {
         @content;
     }
 }
-@mixin mobile-sm{
+@mixin mobile-sm {
     @media only screen and (max-width: 480px) {
         @content;
     }
@@ -40,13 +40,20 @@ $color_red:        crimson;
 //
 // }
 
-@mixin anim($name, $time, $delay, $timing-function:linear, $letterSpacing:0rem, $font_size:default) {
+@mixin anim(
+    $name,
+    $time,
+    $delay,
+    $timing-function: linear,
+    $letterSpacing: 0rem,
+    $font_size: default
+) {
     animation: #{$name} #{$time} #{$delay} forwards #{$timing-function};
     @include keyframe($name, $letterSpacing, $font-size);
 }
-@mixin keyframe($name, $letterSpacing, $font_size){
-    @keyframes #{$name}{
-        to{
+@mixin keyframe($name, $letterSpacing, $font_size) {
+    @keyframes #{$name} {
+        to {
             left: 0;
             opacity: 1;
             top: 0;
@@ -54,20 +61,20 @@ $color_red:        crimson;
             transform: scale(1);
             font-size: $font_size;
         }
-
     }
 }
-body{
+body {
     font-size: 1.5rem;
     text-align: left;
     color: #a6a7aa;
+    color: #53637b;
 }
-p{
+p {
     line-height: 1.6;
     margin: 0 0 2rem;
 }
 
-.cover{
+.cover {
     align-content: center;
     display: grid;
     height: 100%;
@@ -77,84 +84,80 @@ p{
     width: 100%;
 }
 
-
-section{
+section {
     background: #fff;
     width: 100%;
     text-align: left;
     display: grid;
     align-content: center;
 }
-.wrapper{
+.wrapper {
     width: 110rem;
     margin: auto;
     display: grid;
     grid-template-columns: 35rem 1fr;
     padding: 17rem 0 12rem;
-
-
 }
-.section__title{
+.section__title {
     font-size: 2.6rem;
-    // font-weight: bold;
+    font-weight: normal;
     text-align: right;
     color: $color_theme;
     color: crimson;
     text-transform: uppercase;
     padding-right: 10rem;
 }
-.btn__box{
+.btn__box {
     // text-align: right;
     text-align: center;
-    grid-column: 2;
+    grid-column: span 2;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
 }
-.btn{
+.btn {
     display: inline-block;
     width: 25rem;
-    border: solid .1rem crimson;
+    border: solid 0.1rem crimson;
     color: crimson;
-    padding: 1rem ;
+    padding: 1rem;
     text-align: center;
     margin: 3rem 0 0;
     cursor: pointer;
-
 }
-.mobile{
+.mobile {
     display: none;
 }
-@include desktop-sm{
-    .wrapper{
+@include desktop-sm {
+    .wrapper {
         width: 100%;
         padding: 17rem 5rem 12rem;
         grid-template-columns: 30rem 1fr;
     }
 }
-@include tablet{
-    .wrapper{
+@include tablet {
+    .wrapper {
         padding: 17rem 10rem 12rem;
         display: block;
     }
-    .section__title{
+    .section__title {
         text-align: left;
         margin-bottom: 2rem;
         font-size: 3rem;
     }
-
 }
-@include mobile{
-    .mobile{
+@include mobile {
+    .mobile {
         display: block;
     }
-    .wrapper{
+    .wrapper {
         padding: 12rem 5rem 12rem;
     }
-    p{
+    p {
         font-size: 1.2rem;
     }
 }
-@include mobile-sm{
-    .wrapper{
+@include mobile-sm {
+    .wrapper {
         padding: 10rem 2.5rem 10rem;
     }
-
 }

@@ -1,0 +1,31 @@
+@import './../../App.scss';
+.Testimonials {
+    background: #f9f9fb;
+    // .section__title {
+    //     color: #fff;
+    // }
+}
+.Testimonials__card {
+    width: 90%;
+    border-bottom: solid 0.1rem #edeff3;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    p {
+        margin-bottom: 0;
+    }
+}
+.Testimonials__divider {
+    display: inline-block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: crimson;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.Testimonials__name {
+    font-weight: bold;
+}
+.Testimonials__title {
+    font-size: 1.2rem;
+    margin-top: -0.3rem;
+}
