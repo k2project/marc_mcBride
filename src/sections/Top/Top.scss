@@ -1,10 +1,10 @@
-@import './../../App.scss';  //import vars and mixins
-.Top{
+@import './../../App.scss'; //import vars and mixins
+.Top {
     overflow: hidden;
     padding-left: 15rem;
     color: #fff;
     height: 90vh;
-    .cover.bg{
+    .cover.bg {
         background-image: url('./../../media/imgs/mmb.jpg');
         background-size: cover;
         background-position: left top;
@@ -14,94 +14,87 @@
         height: 100vh;
         width: 100%;
     }
-    .cover{
-        background: rgba(171,174,183,.2);
+    .cover {
+        background: rgba(171, 174, 183, 0.2);
     }
     align-content: end;
-    .wrapper{
-        padding-top:10rem;
-
+    .wrapper {
+        padding-top: 10rem;
     }
-    h1{
+    h1 {
         font-size: 6rem;
-        line-height: .9;
-        margin-bottom: .5rem;
+        line-height: 0.9;
+        margin-bottom: 0.5rem;
     }
-    h2{
+    h2 {
         font-weight: normal;
         // font-size: 3rem;
-        font-size: 3rem;
-        margin-top: .5rem;
-
+        font-size: 2.6rem;
+        margin-top: 0.5rem;
     }
-    p{
+    p {
         margin-top: 5rem;
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.4;
     }
 }
-.Top__content{
-    transition: .5s;
+.Top__content {
+    transition: 0.5s;
 }
 
 //max 1200
-@include desktop-sm{
-    .Top{
+@include desktop-sm {
+    .Top {
         padding-left: 8rem;
-        h1{
+        h1 {
             font-size: 5rem;
         }
-        h2{
+        h2 {
             font-size: 2.1rem;
         }
     }
 }
 //max 1024
-@include tablet{
-    .Top .cover.bg{
+@include tablet {
+    .Top .cover.bg {
         background-position: 40% top;
-
     }
-    .Top h2{
-    width: 30rem;}
+    .Top h2 {
+        width: 30rem;
+    }
 }
 //max 768
-@include mobile{
-
-    .Top{
+@include mobile {
+    .Top {
         padding-left: 4rem;
         min-height: 50rem;
 
-        h1{
+        h1 {
             font-size: 4rem;
         }
-        h2{
+        h2 {
             font-size: 2rem;
         }
-        p{
+        p {
             font-size: 1.4rem;
         }
     }
-    .Top .cover.bg{
+    .Top .cover.bg {
         background-position: 55% top;
-
     }
-
 }
 //max480
-@include mobile-sm{
-    .Top{
+@include mobile-sm {
+    .Top {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
 }
 
 //landscape and mobile
 @media only screen and (max-width: 768px) and (orientation: landscape) {
-
-    .Top .cover.bg{
+    .Top .cover.bg {
         background-image: url('./../../media/imgs/mmbLandscape.jpg');
         background-position: right top;
     }
