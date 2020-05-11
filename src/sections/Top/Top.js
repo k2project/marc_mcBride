@@ -18,7 +18,8 @@ export default function Top (){
             <div className="wrapper">
                 <div className="Top__content">
                     <h1>MARC <br/>McBRIDE</h1>
-                    <h2>Music Director</h2>
+                    <h2>Theatre Music Director, Conductor & Pianist</h2>
+                    {/* <h2>Music Director</h2> */}
                     <p>Coffee lover. Dog lover. <br/>Health & Fitness junkie. Traveller.</p>
                 </div>
 

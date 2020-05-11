@@ -89,13 +89,13 @@ export const media = [
         img:'EdenEspinosa.jpg',
         video:'EdenEspinosa'
     },
-    {
-        title:'Maxx - Celebrity Cruises International',
-        role:'Music Creation & Supervision',
-        collaborators:'Paul Ooi and Nick Len',
-        img:'Maxx.jpg',
-        video:'Maxx'
-    },
+    // {
+    //     title:'Maxx - Celebrity Cruises International',
+    //     role:'Music Creation & Supervision',
+    //     collaborators:'Paul Ooi and Nick Len',
+    //     img:'Maxx.jpg',
+    //     video:'Maxx'
+    // },
     {
         title:'Shoshana Bean & Eva Noblezada',
         role:'Music Director ',

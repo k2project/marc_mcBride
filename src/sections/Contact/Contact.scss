@@ -36,6 +36,9 @@ footer{
         margin-right: 1rem;
 
     }
+    a:first-child{
+        top: -.1rem;
+    }
 }
 //max 1200
 @include desktop-sm{

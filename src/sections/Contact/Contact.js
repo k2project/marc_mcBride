@@ -28,8 +28,9 @@ export default function Contact (){
 
                     </p>
                     <p className="SocialMedia">
-                        <img src={linkedin} alt="linkedin"/>
-                        <img src={facebook} alt="facebook"/>
+                        <a href="https://www.linkedin.com/marcmcbridemd" target="_blank" rel="noopener noreferrer" ><img src={linkedin} alt="Marc McBride LinkedIn account"/></a>
+
+                        {/* <img src={facebook} alt="facebook"/> */}
                         <img src={instagram} alt="instagram"/>
                     </p>
                 </div>
