@@ -1,8 +1,7 @@
 import React from 'react';
 import './Testimonials.scss';
-import PropTypes from 'prop-types';
 
-function Testimonials(props) {
+function Testimonials() {
     return (
         <section className='Testimonials' id='testimonials'>
             <div className='wrapper'>
@@ -10,7 +9,7 @@ function Testimonials(props) {
                     TESTIMONIALS
                 </h2>
                 <div className='section__content'>
-                    <ul aria-lebelledby='testimonilas-list'>
+                    <ul aria-labelledby='testimonilas-list'>
                         <li className='Testimonials__card'>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -63,7 +62,5 @@ function Testimonials(props) {
         </section>
     );
 }
-
-Testimonials.propTypes = {};
 
 export default Testimonials;

@@ -18,14 +18,14 @@ export const media = [
         title: 'Club Cumming with Alan Cumming & Christina Bianco',
         role: 'Music Director ',
         collaborators: null,
-        img: 'ClubCumming.jpg',
+        img: 'ClubCumming.png',
         video: 'ClubCumming',
     },
     {
         title: 'Shoshana Bean - Live In London',
         role: 'Music Director ',
         collaborators: null,
-        img: 'ShoshanaLive.jpg',
+        img: 'ShoshanaLive3.png',
         video: 'ShoshanaLive',
     },
     {
@@ -84,7 +84,7 @@ export const media = [
         title: 'Eden Espinosa - Live In London',
         role: 'Music Director ',
         collaborators: null,
-        img: 'EdenEspinosa.jpg',
+        img: 'EdenEspinosa2.jpg',
         video: 'EdenEspinosa',
     },
     // {
@@ -98,7 +98,7 @@ export const media = [
         title: 'Shoshana Bean & Eva Noblezada',
         role: 'Music Director ',
         collaborators: null,
-        img: 'S&E.jpg',
+        img: 'S&E2.png',
         video: 'ShoshanaAndEva',
     },
 ];

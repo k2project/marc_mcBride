@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.scss';
 
 import linkedin from './../../media/icons/linkedin.png';
-import facebook from './../../media/icons/facebook.png';
 import instagram from './../../media/icons/instagram.png';
 
 export default function Contact() {
@@ -30,7 +29,7 @@ export default function Contact() {
                         >
                             <li>
                                 <a
-                                    href='http://www.globalartists.com'
+                                    href='http://www.globalartists.co.uk'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     onMouseDown={(e) => e.preventDefault()}
@@ -40,12 +39,12 @@ export default function Contact() {
                             </li>
                             <li>
                                 <a
-                                    href='mailto:michaelgarrett@globalartists.com?Subject=Re: Marc McBride (via website)'
+                                    href='mailto:michaelgarrett@globalartists.co.uk?Subject=Re: Marc McBride (via website)'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     onMouseDown={(e) => e.preventDefault()}
                                 >
-                                    michaelgarrett@globalartists.com
+                                    michaelgarrett@globalartists.co.uk
                                 </a>
                             </li>
                         </ul>

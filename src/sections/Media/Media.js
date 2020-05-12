@@ -5,15 +5,23 @@ import playBtn from './../../media/icons/playBtn.png';
 
 let videoInt = null;
 let numOfMedia = 9;
+
 export default function Media() {
     const [allMedia, setAllMediaTrue] = useState(false);
+    let [tab, setTab] = useState(false);
+    function handleTabClick(e, t) {
+        const key = e.which || e.keyCode;
+        console.log(e, t);
+        setTab(t);
+    }
     const mediaBox12 = media
         .slice(0, numOfMedia)
-        .map((video) => displayMedia(video));
+        .map((video) => displayMedia(video, tab, handleTabClick));
     const mediaBoxRemaining = media
         .slice(numOfMedia)
-        .map((video) => displayMedia(video));
+        .map((video) => displayMedia(video, tab, handleTabClick));
     const all = allMedia ? 'all-media' : '';
+
     return (
         <section className={'Media ' + all} id='media'>
             <div className='wrapper'>
@@ -21,7 +29,7 @@ export default function Media() {
                     Media
                 </h2>
                 <div className='section__content'>
-                    <ul aria-lebelledby='media-list'>
+                    <ul aria-labelledby='media-list'>
                         {mediaBox12}
                         {allMedia && mediaBoxRemaining}
                     </ul>
@@ -45,21 +53,16 @@ export default function Media() {
     );
 }
 
-function displayMedia(el) {
+function displayMedia(el, tab, handleTabClick) {
     const img = el.img ? el.img : 'marc.png';
     const bg = require('./../../media/imgs/' + img);
     return (
-        <li
-            className='media'
-            key={el.title}
-            onMouseOver={handleMouseEnter}
-            onMouseOut={handleMouseLeave}
-        >
+        <li className='media' key={el.title}>
             <div
                 className='media__bg cover'
                 style={{ backgroundImage: 'url(' + bg + ')' }}
             ></div>
-            <div className='media__text cover' onClick={handleMouseEnter}>
+            <div className='media__text cover'>
                 {el.title && (
                     <div className='media__title'>
                         <b>{el.title}</b>
@@ -72,46 +75,29 @@ function displayMedia(el) {
                     </div>
                 )}
             </div>
-            <div className='media__play cover'>
-                <img
-                    src={playBtn}
-                    onClick={(e) => getVideo(e, el)}
-                    alt={`Play ${el.title}`}
-                />
-            </div>
+            <button
+                className='media__play cover'
+                onKeyDown={(e) => handleTabClick(e, true)}
+                onClick={(e) => getVideo(e, el, tab)}
+                onMouseDown={(e) => e.preventDefault()}
+            >
+                <img src={playBtn} alt='' />
+                <span className='sr-only'>{`Play ${el.title}`}</span>
+            </button>
         </li>
     );
 }
 
-function handleMouseEnter(e) {
-    const media = e.target.closest('.media');
-    const bg = media.firstElementChild;
-    bg.style.opacity = 0.7;
-    bg.style.transform = 'scale(1.2)';
-    const txt = bg.nextElementSibling;
-    txt.style.top = '30%';
-    txt.style.opacity = 0;
-    const play = media.lastElementChild;
-    play.style.top = 0;
-}
-function handleMouseLeave(e) {
-    const media = e.target.closest('.media');
-    const bg = media.firstElementChild;
-    bg.style.opacity = 0.4;
-    bg.style.transform = 'scale(1)';
-    const txt = bg.nextElementSibling;
-    txt.style.top = 0;
-    txt.style.opacity = 1;
-    const play = media.lastElementChild;
-    play.style.top = '100%';
-}
-
-function getVideo(e, el) {
-    handleMouseLeave(e);
+function getVideo(e, el, tab) {
+    const clickedEl = e.target.closest('.media__play.cover');
+    // handleMouseLeave(e);
     //to stop dbl click to create 2 players
     if (!document.querySelector('.player')) {
         const player = document.createElement('div');
-        const close = '<div class="close">&times;</div>';
+        const close = `<button class="close close-on-click" >
+                <span class="sr-only">Close Video</span>
+                <span class="close-on-click" aria-hidden="true">&times;</span>
+            </button>`;
 
         ////DEVELOPEMENT
         // const video = '<video width="640" height="360" autoplay playsinline mute poster="./../../media/imgs/'+el.img+'"><source src="/Grease.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
@@ -125,10 +111,19 @@ function getVideo(e, el) {
             '"><source src="/videos/' +
             el.video +
             '.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
-        const ctrls =
-            '<div class="player__ctrls"><div class="player__btn paused"></div><div class="player__progress"><span></span></div><div class="player_timing"></div></div>';
+        const ctrls = `<div class="player__ctrls">
+                <button class="player__btn paused">
+                    <span class="sr-only">Toggle play button</span>
+                </button>
+                <div class="player__progress" tabindex="0">
+                    <span></span>
+                </div>
+                <div class="player_timing"></div>
+            </div>`;
         const title =
-            '<div class = "player__title"><p>' + el.title + '</p></div>';
+            '<div class = "player__title"><p role="alert">' +
+            el.title +
+            '</p></div>';
 
         player.innerHTML = video + ctrls + title + close;
         player.className = 'player';
@@ -137,27 +132,49 @@ function getVideo(e, el) {
         //slide player in on play btn click
         setTimeout(() => {
             player.classList.add('shown');
+            if (tab) player.querySelector('.player__btn').focus();
         }, 0);
+        //no focus styling unless TAB is used
+        handleMouseDown(player);
         //pausing/unpasing video
         //closing player
-        handlePlayerClick(player);
+        handlePlayerClick(player, tab, clickedEl);
         //get video timing
         videoInt = setInterval(() => getVideoTiming(player), 100);
 
         const vid = player.firstElementChild;
-        closeVideoOnPlayEnd(vid);
+        closeVideoOnPlayEnd(vid, tab, clickedEl);
+        //set focus back to the clicked element
     } else {
         return;
     }
 }
+function handleMouseDown(player) {
+    player
+        .querySelector('.player__btn.paused')
+        .addEventListener('mousedown', (e) => {
+            e.preventDefault();
+        });
+    player
+        .querySelector('.close-on-click')
+        .addEventListener('mousedown', (e) => {
+            e.preventDefault();
+        });
+    player
+        .querySelector('.player__progress')
+        .addEventListener('mousedown', (e) => {
+            e.preventDefault();
+        });
+}
 
-function handlePlayerClick(player) {
+function handlePlayerClick(player, tab, clickedEl) {
     const vid = player.firstElementChild;
     player.addEventListener('click', (e) => {
         //closing player on x click
-        if (e.target.classList.contains('close')) {
+        if (e.target.classList.contains('close-on-click')) {
             player.remove();
             clearInterval(videoInt);
+            if (tab) clickedEl.focus();
         }
         //pause/unpaused video
         if (e.target.classList.contains('player__btn')) {
@@ -211,7 +228,7 @@ function getTimeFormated(t) {
     secs = ('0' + secs).slice(-2);
     return { mins, secs };
 }
-function closeVideoOnPlayEnd(vid) {
+function closeVideoOnPlayEnd(vid, tab, clickedEl) {
     const int = setInterval(() => {
         if (vid.currentTime === vid.duration) {
             clearInterval(int);
@@ -221,6 +238,7 @@ function closeVideoOnPlayEnd(vid) {
             }, 1000);
             setTimeout(() => {
                 vid.parentElement.remove();
+                if (tab) clickedEl.focus();
             }, 3000);
         }
     }, 1000);

@@ -20,7 +20,10 @@ export default function Work() {
                                 Curtain Falls ( Number 1 in the iTunes Download
                                 Charts )
                             </li>
-                            <li>Vanara The Musical - Concept Album</li>
+                            <li>
+                                Vanara The Musical - Concept Album ( In
+                                collaboration with Ted Sperling )
+                            </li>
                             <li>
                                 Dreamboats &amp; Petticoats 10th Anniversary -
                                 UK Tour
@@ -39,11 +42,10 @@ export default function Work() {
                             </li>
                             <li>
                                 We Will Rock You - Queen Theatrical Productions
-                                / RCCL
+                                / RCP
                             </li>
                             <li>
-                                Grease The Musical - David Ian Productions /
-                                RCCL
+                                Grease The Musical - David Ian Productions / RCP
                             </li>
                             <li>Eden Espinosa - Live In London</li>
                             <li>Shoshana Bean - Live in London</li>
