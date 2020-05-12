@@ -1,5 +1,6 @@
 import React from 'react';
 import './Work.scss';
+import cv from '../../media/Marc_McBride_Online_CV.pdf';
 
 export default function Work() {
     return (
@@ -7,101 +8,94 @@ export default function Work() {
             <div className='wrapper'>
                 <h2 className='section__title'>Work</h2>
                 <div className='section__content'>
-                    <p>
-                        <b>Music Supervision:</b>
-                    </p>
-                    <p>
-                        <span>
-                            Davines World Wide Hair Tour 2019 -The Harpa,
-                            Iceland <br className='mobile' /> | Orchestra:
-                            Icelandic Symphony |
-                        </span>
-                        <span>
-                            Cilla The Musical - UK Tour{' '}
-                            <i>
-                                ( Nominated Best Musical What's On Stage Awards
-                                )
-                            </i>
-                        </span>
-                        <span>
-                            Dreamboats & Petticoats 10th Anniversary - UK Tour
-                        </span>
-                        <span>
-                            Carrie Hope Fletcher’s Debut Album - When The
-                            Curtain Falls{' '}
-                            <i>( Number 1 in the iTunes Download Charts )</i>
-                        </span>
-                        <span>Vanara The Musical - Concept Album</span>
-                        <span>
-                            Life - Celebrity Cruises International{' '}
-                            <i>
-                                ( Winner Travel Weekly Gold Award in the USA
-                                within the ‘Premium Ship Entertainment’ )
-                            </i>
-                        </span>
-                        <span>
-                            Cosmopolitan- Celebrity Cruises International
-                        </span>
-                        <span>Maxx - Celebrity Cruises International</span>
-                        <span>
-                            P&O Cruises International (In association with the
-                            the TCB Group, Gareth Walker & Natalie Lowe)
-                        </span>
-                    </p>
-                    <p>
-                        <b>Music Direction:</b>
-                    </p>
-                    <p>
-                        <span>
-                            We Will Rock You - Queen Theatrical Productions /
-                            RCCL
-                        </span>
-                        <span>
-                            Grease The Musical - David Ian Productions / RCCL
-                        </span>
-                        <span>
-                            Glamis Prom - Glamis Castle{' '}
-                            <br className='mobile' />| Orchestra: British
-                            Sinfonietta |
-                        </span>
-                        <span>
-                            Broken Strings - Celebrity Cruises International
-                        </span>
-                        <span>Eden Espinosa - Live In London</span>
-                        <span>Shoshana Bean - Live in London</span>
-                        <span>Christina Bianco - UK Tour</span>
-                        <span>
-                            Tonight From The West End - UK Concert Tour{' '}
-                            <br className='mobile' /> | Orchestra: British
-                            Sinfonietta |
-                        </span>
-                        <span>Best of Musical Starnights - German Tour</span>
-                        <span>Vanara The Musical - Original Workshop</span>
-                        <span>Save The Last Dance For Me - UK Tour</span>
-                    </p>
-                    <p>
-                        <b>Performing:</b>
-                    </p>
-                    <p>
-                        <span>
-                            John Wilson Orchestra - Music of MGM - Royal Albert
-                            Hall / UK Tour
-                        </span>
-                        <span>
-                            BBC Proms 2016/2017/2018 - Royal Albert Hall
-                        </span>
-                        <span>
-                            Music Of Danny Elfman & Tim Burton - Royal Albert
-                            Hall / UK Tour
-                        </span>
-                        <span>
-                            Wicked The Musical - Apollo Victoria, West End
-                        </span>
-                        <span>
-                            Les Miserables 20th Anniversary - Queens Theatre,
-                            West End
-                        </span>
-                    </p>
+                    <section>
+                        <h3 id='music-supervision'>Music Supervision:</h3>
+                        <ul aria-labelledby='music-supervision'>
+                            <li>
+                                Cilla The Musical - UK Tour ( Nominated Best
+                                Musical What's On Stage Awards )
+                            </li>
+                            <li>
+                                Carrie Hope Fletcher’s Debut Album - When The
+                                Curtain Falls ( Number 1 in the iTunes Download
+                                Charts )
+                            </li>
+                            <li>Vanara The Musical - Concept Album</li>
+                            <li>
+                                Dreamboats &amp; Petticoats 10th Anniversary -
+                                UK Tour
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 id='music-direction'>
+                            Music Direction/Conducting:
+                        </h3>
+                        <ul aria-labelledby='music-direction'>
+                            <li>
+                                Davines World Wide Hair Tour 2019 - The Harpa,
+                                Iceland <br className='mobile' />| Orchestra:
+                                Iceland Symphony |
+                            </li>
+                            <li>
+                                We Will Rock You - Queen Theatrical Productions
+                                / RCCL
+                            </li>
+                            <li>
+                                Grease The Musical - David Ian Productions /
+                                RCCL
+                            </li>
+                            <li>Eden Espinosa - Live In London</li>
+                            <li>Shoshana Bean - Live in London</li>
+                            <li>Christina Bianco - UK Tour</li>
+                            <li>
+                                Glamis Prom - Glamis Castle{' '}
+                                <br className='mobile' />| Orchestra: British
+                                Sinfonietta |
+                            </li>
+                            <li>
+                                Tonight From The West End - UK Concert Tour{' '}
+                                <br className='mobile' />| Orchestra: British
+                                Sinfonietta |
+                            </li>
+                            <li>Best of Musical Starnights - European Tour</li>
+                            <li>Vanara The Musical - Original Workshop</li>
+                            <li>Save The Last Dance For Me - UK Tour</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 id='music-performiong'>Performing:</h3>
+                        <ul aria-labelledby='music-performing'>
+                            <li>
+                                John Wilson Orchestra - Music of MGM - Royal
+                                Albert Hall / UK Tour
+                            </li>
+                            <li>
+                                BBC Proms 2016/2017/2018 - Royal Albert Hall
+                            </li>
+                            <li>
+                                Music Of Danny Elfman &amp; Tim Burton - Royal
+                                Albert Hall / UK Tour
+                            </li>
+                            <li>
+                                Wicked The Musical - Apollo Victoria, West End
+                            </li>
+                            <li>
+                                Les Miserables 20th Anniversary - Queens
+                                Theatre, West End
+                            </li>
+                        </ul>
+                    </section>
+                    <section className='Work__download'>
+                        <a
+                            href={cv}
+                            download
+                            className='btn'
+                            onMouseDown={(e) => e.preventDefault()}
+                        >
+                            Download PDF CV
+                        </a>
+                    </section>
                 </div>
             </div>
         </section>

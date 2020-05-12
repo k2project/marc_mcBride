@@ -1,129 +1,133 @@
-@import './../../App.scss';  //import vars and mixins
+@import './../../App.scss'; //import vars and mixins
 
-.Nav{
+.Nav {
     color: #fff;
     left: 0;
     font-size: 1.8rem;
     position: fixed;
+    position: absolute;
     top: 0;
     z-index: 9;
     width: 100%;
     padding: 6rem 0 4rem;
-    transition: .25s;
-    .wrapper{
+    transition: 0.25s;
+    .wrapper {
         display: grid;
-        grid-template-columns:auto 1fr;
+        grid-template-columns: auto 1fr;
         padding: 0;
     }
 }
-.Nav__brand{
-        font-size: 2.2rem;
-        font-weight: normal;
-
+.Nav__brand {
+    font-size: 2.2rem;
+    font-weight: normal;
 }
 
-.Nav__ham{
+.Nav__ham {
     display: none;
-
 }
-.Nav__pages{
+.Nav__pages {
     text-align: right;
-    a{
-        margin-left:1.7rem;
+    a {
+        margin-left: 1.7rem;
         transition: none;
-        top: .2rem;
+        top: 0.2rem;
     }
-
+    a:focus {
+        border-bottom: solid 0.1rem #fff;
+    }
 }
-
 
 //max 1200
-@include desktop-sm{
-    .Nav .wrapper{
+@include desktop-sm {
+    .Nav .wrapper {
         padding: 0 5rem;
     }
-    .Nav{
+    .Nav {
         padding: 4rem 0 3rem;
     }
-
 }
 //max 1024
-@include tablet{
-    .Nav{
+@include tablet {
+    .Nav {
         padding: 4rem 0 2rem;
         font-size: 1.4rem;
     }
-    .Nav__brand{
+    .Nav__brand {
         font-size: 1.8rem;
     }
 }
 //max 768
-@include mobile{
-    .Nav .wrapper{
+@include mobile {
+    .Nav .wrapper {
         padding: 0 2rem;
     }
 }
 //max480
-@include mobile-sm{
-    .Nav{
-        .wrapper{
+@include mobile-sm {
+    .Nav {
+        .wrapper {
             grid-template-columns: 1fr auto;
         }
     }
-    .Nav__brand{
+    .Nav__brand {
         font-size: 2rem;
     }
-    .Nav__ham{
+    .Nav__ham {
         display: block;
-        top:.2rem;
+        top: 0.2rem;
         cursor: pointer;
-        span{
+        span {
             cursor: pointer;
             display: block;
             width: 2.7rem;
-            height: .3rem;
+            height: 0.3rem;
             background: #fff;
-            margin-bottom: .5rem;
-
+            margin-bottom: 0.5rem;
         }
     }
-    .Nav__pages{
+    .Nav__pages {
         grid-column: span 2;
         text-align: center;
         display: none;
     }
-    .Nav.open{
-        .Nav__pages{
+    .Nav.open {
+        .Nav__pages {
             margin-top: 3rem;
-            border-top: solid .1rem #fafafa;
+            border-top: solid 0.1rem #fafafa;
             display: block;
             padding: 2rem 0 0;
-            a{
+            a {
                 top: 2rem;
                 opacity: 0;
-
             }
-            a:nth-child(1){@include anim( slideNaVPagesIn, .25s, 0s, ease-out)}
-            a:nth-child(2){@include anim( slideNaVPagesIn, .25s, .1s, ease-out)}
-            a:nth-child(3){@include anim( slideNaVPagesIn, .25s, .2s, ease-out)}
-            a:nth-child(4){@include anim( slideNaVPagesIn, .25s, .3s, ease-out)}
+            a:nth-child(1) {
+                @include anim(slideNaVPagesIn, 0.25s, 0s, ease-out);
+            }
+            a:nth-child(2) {
+                @include anim(slideNaVPagesIn, 0.25s, 0.1s, ease-out);
+            }
+            a:nth-child(3) {
+                @include anim(slideNaVPagesIn, 0.25s, 0.2s, ease-out);
+            }
+            a:nth-child(4) {
+                @include anim(slideNaVPagesIn, 0.25s, 0.3s, ease-out);
+            }
         }
-        .Nav__ham{
-            span{
-                height: .2rem;
+        .Nav__ham {
+            span {
+                height: 0.2rem;
             }
-            span:nth-child(1){
+            span:nth-child(1) {
                 transform: rotate(45deg);
-                top: .35rem;
+                top: 0.35rem;
             }
-            span:nth-child(3){
+            span:nth-child(3) {
                 transform: rotate(-45deg);
-                top: -.35rem;
+                top: -0.35rem;
             }
-            span:nth-child(2){
+            span:nth-child(2) {
                 display: none;
             }
         }
     }
-
 }

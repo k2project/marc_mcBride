@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.scss';
 
 import Top from './sections/Top/Top';
@@ -7,6 +7,7 @@ import Media from './sections/Media/Media';
 import Work from './sections/Work/Work';
 import Contact from './sections/Contact/Contact';
 import Testimonials from './sections/Testimonials/Testimonials';
+import SkipToMainLink from './components/SkipToMainLink';
 
 // const t = new Date().getTime();
 // //30 Sept
@@ -16,7 +17,8 @@ const out = true;
 
 export default function App() {
     return (
-        <div>
+        <Fragment>
+            <SkipToMainLink />
             {out && (
                 <div className='App Marc_McBride'>
                     <Top />
@@ -27,6 +29,6 @@ export default function App() {
                     <Contact />
                 </div>
             )}
-        </div>
+        </Fragment>
     );
 }

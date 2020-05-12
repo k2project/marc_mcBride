@@ -1,40 +1,89 @@
 import React from 'react';
 import './Contact.scss';
 
-import linkedin from './../../media/icons/linkedin.png'
-import facebook from './../../media/icons/facebook.png'
-import instagram from './../../media/icons/instagram.png'
+import linkedin from './../../media/icons/linkedin.png';
+import facebook from './../../media/icons/facebook.png';
+import instagram from './../../media/icons/instagram.png';
 
-export default function Contact (){
-    return(
-        <section className="Contact" id="contact">
-            {/* <div className="Contact_bg"></div> */}
-            <div className="cover"></div>
-            <div className="wrapper">
+export default function Contact() {
+    return (
+        <section className='Contact' id='contact'>
+            <div className='cover bg'></div>
+            <div className='cover'></div>
+            <div className='wrapper'>
                 <footer>
-                        <small>Marc McBride Official Website&copy; {new Date().getFullYear()}</small>
+                    <small>
+                        Marc McBride Official Website&copy;{' '}
+                        {new Date().getFullYear()}
+                    </small>
                 </footer>
-                <div className="section__content">
-                    <p>
-                        Global Artists <br/>
-                        <a href="http://www.globalartists.com" target="_blank" rel="noopener noreferrer">www.globalartists.com</a>
-                        <br/>
-                        <a href="mailto:michaelgarrett@globalartists.com?Subject=Re: Marc McBride (via website)" target="_blank" rel="noopener noreferrer">michaelgarrett@globalartists.com</a>
-                        <br/>
-                    </p>
-                    <p>
-                        Get In Touch Directly<br/>
-                        <a href="mailto:mail@marcmcbride.co.uk ?Subject=Message Via Your Website" target="_blank" rel="noopener noreferrer">mail@marcmcbride.co.uk </a>
+                <div className='section__content'>
+                    <h2 id='contact-details' className='sr-only'>
+                        Contact details
+                    </h2>
+                    <section>
+                        <h3 id='global-artists'> Global Artists</h3>
 
-                    </p>
-                    <p className="SocialMedia">
-                        <a href="https://www.linkedin.com/marcmcbridemd" target="_blank" rel="noopener noreferrer" ><img src={linkedin} alt="Marc McBride LinkedIn account"/></a>
+                        <ul
+                            aria-labelledby='contact-details global-artists'
+                            className='Contact__global-artists'
+                        >
+                            <li>
+                                <a
+                                    href='http://www.globalartists.com'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    onMouseDown={(e) => e.preventDefault()}
+                                >
+                                    www.globalartists.com
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='mailto:michaelgarrett@globalartists.com?Subject=Re: Marc McBride (via website)'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    onMouseDown={(e) => e.preventDefault()}
+                                >
+                                    michaelgarrett@globalartists.com
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 id='direct'> Get In Touch Directly</h3>
 
-                        {/* <img src={facebook} alt="facebook"/> */}
-                        <img src={instagram} alt="instagram"/>
-                    </p>
+                        <ul aria-labelledby='contact-details direct'>
+                            <li>
+                                <a
+                                    href='mailto:mail@marcmcbride.co.uk ?Subject=Message Via Your Website'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    onMouseDown={(e) => e.preventDefault()}
+                                >
+                                    marc@marc-mcbride.com{' '}
+                                </a>
+                            </li>
+                            <li className='social-media'>
+                                <a
+                                    href='https://www.linkedin.com/in/marc-mcbride/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    onMouseDown={(e) => e.preventDefault()}
+                                >
+                                    <img
+                                        src={linkedin}
+                                        alt='Marc McBride LinkedIn account'
+                                    />
+                                </a>
+                            </li>
+                            <li className='social-media'>
+                                <img src={instagram} alt='instagram' />
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </section>
-    )
-};
+    );
+}

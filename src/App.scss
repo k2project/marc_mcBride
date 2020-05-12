@@ -63,6 +63,47 @@ $color_red: crimson;
         }
     }
 }
+//==========================
+//  SCREEN READERS STYLING
+//==========================
+.sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px); //IE6 and IE7
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.sr-only.in-focus:link,
+.sr-only.in-focus:visited,
+.sr-only.in-focus:focus {
+    position: relative;
+    clip: auto !important;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    line-height: normal;
+    width: auto;
+    padding: 4rem 5rem;
+    left: 0;
+    right: 0;
+    background: crimson;
+    color: #fff !important;
+    font-size: 1.6rem;
+    z-index: 1000 !important;
+    display: block;
+    width: 100vw;
+}
+a.sr-only.in-focus:hover {
+    text-decoration-line: underline;
+}
+
 body {
     font-size: 1.5rem;
     text-align: left;
@@ -111,18 +152,22 @@ section {
     // text-align: right;
     text-align: center;
     grid-column: span 2;
-    padding-bottom: 4rem;
-    padding-top: 1rem;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
 }
 .btn {
     display: inline-block;
-    width: 25rem;
+    width: 22rem;
     border: solid 0.1rem crimson;
     color: crimson;
-    padding: 1rem;
+    padding: 1.4rem 1rem;
     text-align: center;
     margin: 3rem 0 0;
+    font-size: 1.4rem;
     cursor: pointer;
+}
+.btn:focus {
+    border: dashed 0.1rem #53637b;
 }
 .mobile {
     display: none;

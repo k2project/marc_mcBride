@@ -3,11 +3,11 @@ import './Nav.scss';
 
 export default function Page(props) {
     useEffect(() => {
-        window.addEventListener('scroll', handleNavOnScroll);
-        window.addEventListener('load', handleNavOnScroll);
+        // window.addEventListener('scroll', handleNavOnScroll);
+        // window.addEventListener('load', handleNavOnScroll);
         return () => {
-            window.removeEventListener('scroll', handleNavOnScroll);
-            window.removeEventListener('load', handleNavOnScroll);
+            // window.removeEventListener('scroll', handleNavOnScroll);
+            // window.removeEventListener('load', handleNavOnScroll);
         };
     });
     return (
@@ -22,19 +22,39 @@ export default function Page(props) {
                     <span></span>
                 </div>
                 <div className='Nav__pages'>
-                    <a href='#about' onClick={closeMenu}>
+                    <a
+                        href='#about'
+                        onClick={closeMenu}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         About
                     </a>
-                    <a href='#media' onClick={closeMenu}>
+                    <a
+                        href='#media'
+                        onClick={closeMenu}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         Media
                     </a>
-                    <a href='#work' onClick={closeMenu}>
+                    <a
+                        href='#work'
+                        onClick={closeMenu}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         Work
                     </a>
-                    <a href='#testimonials' onClick={closeMenu}>
+                    <a
+                        href='#testimonials'
+                        onClick={closeMenu}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         Testimonials
                     </a>
-                    <a href='#contact' onClick={handleContactClick}>
+                    <a
+                        href='#contact'
+                        onClick={handleContactClick}
+                        onMouseDown={(e) => e.preventDefault()}
+                    >
                         Contact
                     </a>
                 </div>

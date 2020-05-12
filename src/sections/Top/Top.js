@@ -21,10 +21,9 @@ export default function Top() {
                         McBRIDE
                     </h1>
                     <h2>Theatre Music Director</h2>
-                    {/* <h2>Music Director</h2> */}
                     <p>
                         Coffee lover. Dog lover. <br />
-                        Health & Fitness junkie. Traveller.
+                        Health &amp; Fitness junkie. Traveller.
                     </p>
                 </div>
             </div>

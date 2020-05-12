@@ -17,19 +17,27 @@ export default function Media() {
     return (
         <section className={'Media ' + all} id='media'>
             <div className='wrapper'>
-                <h2 className='section__title'>Media</h2>
+                <h2 className='section__title sr-only' id='media-list'>
+                    Media
+                </h2>
                 <div className='section__content'>
-                    {mediaBox12}
-                    {allMedia && mediaBoxRemaining}
+                    <ul aria-lebelledby='media-list'>
+                        {mediaBox12}
+                        {allMedia && mediaBoxRemaining}
+                    </ul>
                 </div>
                 {!allMedia && media.length > numOfMedia && (
-                    <div
-                        onClick={() => {
-                            setAllMediaTrue(true);
-                        }}
-                        className='btn__box'
-                    >
-                        <span className='btn'> More</span>
+                    <div className='btn__box'>
+                        <button
+                            className='btn'
+                            onClick={() => {
+                                setAllMediaTrue(true);
+                            }}
+                            onMouseDown={(e) => e.preventDefault()}
+                        >
+                            {' '}
+                            More
+                        </button>
                     </div>
                 )}
             </div>
@@ -41,7 +49,7 @@ function displayMedia(el) {
     const img = el.img ? el.img : 'marc.png';
     const bg = require('./../../media/imgs/' + img);
     return (
-        <div
+        <li
             className='media'
             key={el.title}
             onMouseOver={handleMouseEnter}
@@ -68,17 +76,17 @@ function displayMedia(el) {
                 <img
                     src={playBtn}
                     onClick={(e) => getVideo(e, el)}
-                    alt='play'
+                    alt={`Play ${el.title}`}
                 />
             </div>
-        </div>
+        </li>
     );
 }
 
 function handleMouseEnter(e) {
     const media = e.target.closest('.media');
     const bg = media.firstElementChild;
-    bg.style.opacity = 0.8;
+    bg.style.opacity = 0.7;
     bg.style.transform = 'scale(1.2)';
     const txt = bg.nextElementSibling;
     txt.style.top = '30%';

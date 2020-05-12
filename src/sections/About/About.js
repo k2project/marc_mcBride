@@ -4,7 +4,7 @@ import './About.scss';
 export default function About() {
     return (
         <section className='About' id='about'>
-            <div className='wrapper'>
+            <div className='wrapper' id='main'>
                 <h2 className='section__title'>About</h2>
                 <div className='section__content'>
                     <p>
@@ -16,7 +16,6 @@ export default function About() {
                         Previously, a Bachelor of Laws (LL.B) at The University
                         of Dundee, Scotland.
                     </p>
-                    {/* <p>Part-time student alongside current projects, Global MBA, The University of London.</p> */}
                     <p>Avid language learner. </p>
                 </div>
             </div>

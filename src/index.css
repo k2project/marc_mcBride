@@ -39,6 +39,7 @@ input,
 button,
 select,
 option {
+    background-color: transparent;
     background-clip: padding-box;
     border: none;
 }
