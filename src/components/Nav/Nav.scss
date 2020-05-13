@@ -82,9 +82,9 @@
             cursor: pointer;
             display: block;
             width: 2.7rem;
-            height: 0.3rem;
+            height: 0.2rem;
             background: #fff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
         }
     }
     .Nav__ham:focus {
@@ -114,6 +114,7 @@
             font-size: 3.5rem;
             width: 5rem;
             line-height: 0.8;
+            padding-left: 1rem;
         }
 
         .Nav__ham span {
@@ -154,11 +155,11 @@
             }
             span:nth-child(1) {
                 transform: rotate(45deg);
-                top: 0.35rem;
+                top: 0.36rem;
             }
             span:nth-child(3) {
                 transform: rotate(-45deg);
-                top: -0.35rem;
+                top: -0.36rem;
             }
             span:nth-child(2) {
                 display: none;
