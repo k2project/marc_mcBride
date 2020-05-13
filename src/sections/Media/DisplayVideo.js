@@ -38,10 +38,8 @@ export default function DisplayVideo({ video }) {
                 el.video +
                 '.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
             const ctrls = `<div class="player__ctrls">
-                    <button class="player__btn paused">
-                        <span class="sr-only">Toggle play button</span>
-                    </button>
-                    <div class="player__progress" tabindex="0">
+                    <button class="player__btn paused" title="Play and pause the video"></button>
+                    <div class="player__progress" tabindex="0" title="Video play time. Use left and right arrows to backward or forward the video">
                         <span></span>
                     </div>
                     <div class="player_timing"></div>
@@ -139,8 +137,8 @@ export default function DisplayVideo({ video }) {
             switch (e.keyCode) {
                 //pause/unpaused video on SPACE click
                 case 32:
+                    e.preventDefault();
                     togglePlay(player, play_btn);
-
                     break;
                 //forward video 10s on right arrow press
                 case 39:

@@ -10,11 +10,15 @@
     z-index: 9;
     width: 100%;
     padding: 6rem 0 4rem;
-    transition: 0.25s;
     .wrapper {
         display: grid;
         grid-template-columns: auto 1fr;
         padding: 0;
+    }
+    ul {
+    }
+    li {
+        display: inline-block;
     }
 }
 .Nav__brand {
@@ -51,6 +55,9 @@
     .Nav {
         padding: 4rem 0 2rem;
         font-size: 1.4rem;
+        a {
+            font-size: 1.6rem;
+        }
     }
     .Nav__brand {
         font-size: 1.8rem;
@@ -58,14 +65,9 @@
 }
 //max 768
 @include mobile {
-    .Nav .wrapper {
-        padding: 0 2rem;
-    }
-}
-//max480
-@include mobile-sm {
     .Nav {
         .wrapper {
+            padding: 0 4rem;
             grid-template-columns: 1fr auto;
         }
     }
@@ -85,32 +87,61 @@
             margin-bottom: 0.5rem;
         }
     }
+    .Nav__ham:focus {
+        border: dashed 0.1rem #fff;
+        padding: 1.5rem 1rem 1rem;
+    }
     .Nav__pages {
         grid-column: span 2;
         text-align: center;
         display: none;
     }
     .Nav.open {
+        position: fixed;
+        background-color: #fcfcfc;
+        transition: none;
+        top: -10rem;
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                top: 0;
+            }
+        }
+        .Nav__brand {
+            color: crimson;
+        }
+
+        .Nav__ham span {
+            background-color: #111;
+        }
+        .Nav__ham:focus {
+            border-color: #111;
+        }
         .Nav__pages {
-            margin-top: 3rem;
-            border-top: solid 0.1rem #fafafa;
-            display: block;
-            padding: 2rem 0 0;
+            display: grid;
+            align-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-bottom: 30%;
+            width: 100%;
+            height: 100vh;
+            background-color: #fcfcfc;
+            z-index: -1;
+            li {
+                display: block;
+                margin: 1.2rem 0;
+            }
             a {
-                top: 2rem;
-                opacity: 0;
+                padding: 1rem 0;
+                color: #111;
+                letter-spacing: 0.1rem;
             }
-            a:nth-child(1) {
-                @include anim(slideNaVPagesIn, 0.25s, 0s, ease-out);
-            }
-            a:nth-child(2) {
-                @include anim(slideNaVPagesIn, 0.25s, 0.1s, ease-out);
-            }
-            a:nth-child(3) {
-                @include anim(slideNaVPagesIn, 0.25s, 0.2s, ease-out);
-            }
-            a:nth-child(4) {
-                @include anim(slideNaVPagesIn, 0.25s, 0.3s, ease-out);
+            a:hover,
+            a:focus {
+                border-bottom: solid 0.2rem crimson;
             }
         }
         .Nav__ham {
@@ -128,6 +159,13 @@
             span:nth-child(2) {
                 display: none;
             }
+        }
+    }
+}
+@include mobile-sm {
+    .Nav {
+        .wrapper {
+            padding: 0 5%;
         }
     }
 }
