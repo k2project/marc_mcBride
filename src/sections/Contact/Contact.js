@@ -12,7 +12,7 @@ export default function Contact() {
             <div className='wrapper'>
                 <footer>
                     <small>
-                        Marc McBride Official Website&copy;{' '}
+                        Marc McBride Official Website &copy;
                         {new Date().getFullYear()}
                     </small>
                 </footer>

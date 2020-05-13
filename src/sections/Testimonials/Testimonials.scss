@@ -1,6 +1,9 @@
 @import './../../App.scss';
 .Testimonials {
     background: #f9f9fb;
+    .wrapper {
+        padding-bottom: 8rem;
+    }
 }
 .Testimonials__card {
     width: 90%;
@@ -9,6 +12,7 @@
     margin-bottom: 4rem;
     p {
         margin-bottom: 0.7rem;
+        font-size: 1.6rem;
     }
     .Testimonials__name {
         font-weight: bold;
@@ -32,4 +36,12 @@
     background-color: crimson;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+}
+@include mobile {
+    .Testimonials__card {
+        width: 100%;
+        p {
+            font-size: 1.2rem;
+        }
+    }
 }
