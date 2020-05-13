@@ -18,7 +18,12 @@
         grid-auto-rows: 22vw;
     }
 }
-
+.btn__box {
+    text-align: center;
+    grid-column: span 2;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+}
 .media {
     color: #fff;
     background: $color_theme;
@@ -105,7 +110,7 @@
     text-align: center;
     video {
         margin: 0 auto;
-        width: 64rem;
+        width: 70rem;
         height: 36rem;
     }
     .close {
@@ -143,7 +148,7 @@
 .player__ctrls {
     height: 4rem;
     top: -4rem;
-    width: 64rem;
+    width: 70rem;
     margin: auto;
     background: rgba(20, 20, 20, 0.7);
     margin-bottom: -1rem;
@@ -200,9 +205,9 @@
 }
 //max 1200
 @include desktop-sm {
-    .Media .section__content {
+    .Media ul {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 22rem;
+        grid-auto-rows: 30vw;
     }
     .media:last-child {
         display: none;
@@ -220,24 +225,20 @@
         right: 5rem;
     }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
     .player__ctrls,
     .player video {
-        width: 90%;
+        width: 100%;
     }
 }
 //max 768
 @include mobile {
-    .Media .wrapper {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
     .Media .section__title {
         padding-left: 5rem;
         // margin-bottom: 3rem;
     }
-    .Media .section__content {
-        grid-auto-rows: 18rem;
+    .Media ul {
+        grid-auto-rows: 35vw;
     }
     .player .close {
         top: 3rem;
@@ -245,17 +246,28 @@
         font-size: 5rem;
     }
 }
+@media only screen and (max-width: 600px) {
+    .Media ul {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 50vw;
+    }
+    .media:nth-last-child(-n + 3) {
+        display: none;
+    }
+    .Media.all-media {
+        .media:nth-last-child(-n + 3) {
+            display: block;
+        }
+    }
+}
 //max480
 @include mobile-sm {
     .Media .section__title {
         padding-left: 2rem;
     }
-    .Media .section__content {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 20rem;
-    }
-    .media:last-child {
-        display: block;
+    .Media ul {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 67vw;
     }
 }
 //landscape and mobile

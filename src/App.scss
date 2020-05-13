@@ -137,24 +137,18 @@ section {
     margin: auto;
     display: grid;
     grid-template-columns: 35rem 1fr;
-    padding: 17rem 0 12rem;
+    padding: 15rem 0 12rem;
 }
 .section__title {
     font-size: 2.6rem;
     font-weight: normal;
     text-align: right;
-    color: $color_theme;
     color: crimson;
     text-transform: uppercase;
-    padding-right: 10rem;
+    padding-right: 7rem;
+    top: -0.2rem;
 }
-.btn__box {
-    // text-align: right;
-    text-align: center;
-    grid-column: span 2;
-    padding-bottom: 8rem;
-    padding-top: 3rem;
-}
+
 .btn {
     display: inline-block;
     width: 22rem;
@@ -175,13 +169,13 @@ section {
 @include desktop-sm {
     .wrapper {
         width: 100%;
-        padding: 17rem 5rem 12rem;
+        padding: 15rem 5rem 12rem;
         grid-template-columns: 30rem 1fr;
     }
 }
 @include tablet {
     .wrapper {
-        padding: 17rem 10rem 12rem;
+        padding: 12rem 10rem;
         display: block;
     }
     .section__title {
@@ -195,14 +189,17 @@ section {
         display: block;
     }
     .wrapper {
-        padding: 12rem 5rem 12rem;
+        padding: 12rem 7rem 12rem;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 @include mobile-sm {
     .wrapper {
-        padding: 10rem 2.5rem 10rem;
+        padding: 10rem 7% 10rem;
+    }
+    .section__title {
+        font-size: 2.6rem;
     }
 }
