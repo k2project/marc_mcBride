@@ -132,6 +132,9 @@
     opacity: 1;
     transition: 0.25s ease-out;
 }
+.player:focus {
+    outline: none;
+}
 .player.hidden {
     top: 100%;
     opacity: 0.5;
@@ -153,6 +156,7 @@
     text-align: center;
     z-index: 3;
 }
+
 .player__title {
     text-transform: uppercase;
     padding: 0 2rem;
