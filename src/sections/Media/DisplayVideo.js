@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Media.scss';
 import playBtn from './../../media/icons/playBtn.png';
 
@@ -134,7 +134,7 @@ export default function DisplayVideo({ video }) {
         player.addEventListener('keydown', (e) => {
             const key = e.which || e.keyCode;
             const play_btn = document.querySelector('.player__btn');
-            switch (e.keyCode) {
+            switch (key) {
                 //pause/unpaused video on SPACE click
                 case 32:
                     e.preventDefault();
@@ -149,6 +149,8 @@ export default function DisplayVideo({ video }) {
                 case 37:
                     vid.currentTime -= 10;
                     getVideoTiming(player);
+                    break;
+                default:
                     break;
             }
         });

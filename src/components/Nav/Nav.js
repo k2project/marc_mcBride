@@ -10,6 +10,7 @@ export default function Page() {
             await set_mob_menu('open');
         }
         document.querySelector('.Nav').classList.toggle('open');
+        window.scrollTo(0, 0);
     }
 
     function closeMenu() {

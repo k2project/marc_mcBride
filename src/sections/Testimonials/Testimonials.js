@@ -13,7 +13,7 @@ function Testimonials() {
                     <ul aria-labelledby='testimonilas-list'>
                         {testimonials.map((t) => {
                             return (
-                                <li className='Testimonials__card'>
+                                <li className='Testimonials__card' key={t.name}>
                                     <blockquote>{t.text}</blockquote>
                                     <span className='Testimonials__divider'></span>
                                     <p className='Testimonials__name'>
