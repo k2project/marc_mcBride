@@ -1,16 +1,18 @@
 import React from 'react';
 import './Contact.scss';
+import PasswordForm from './PasswordForm';
 
 import linkedin from './../../media/icons/linkedin.png';
 import instagram from './../../media/icons/instagram.png';
 
-export default function Contact() {
+export default function Contact({ showPrivate }) {
     return (
         <section className='Contact' id='contact'>
             {/* <div className='mb-bg'></div> */}
             <div className='cover'></div>
             <div className='wrapper'>
                 <footer>
+                    <PasswordForm showPrivate={showPrivate} />
                     <small>
                         Marc McBride Official Website &copy;
                         {new Date().getFullYear()}
