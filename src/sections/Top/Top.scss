@@ -4,16 +4,16 @@
     padding-left: 15rem;
     color: #fff;
     height: 90vh;
+
+    overflow-x: hidden;
+
     .cover.bg {
         background-image: url('./../../media/imgs/mmb.jpg');
         background-size: cover;
         background-position: left top;
-        position: absolute;
-        background-attachment: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
+        position: fixed;
+
+        // background-attachment: fixed;
     }
     .cover {
         background: rgba(171, 174, 183, 0.2);

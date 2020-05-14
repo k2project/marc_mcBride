@@ -23,17 +23,15 @@
     a:focus {
         border-bottom: solid 0.1rem #fff;
     }
-    .cover.bg {
-        background-image: url('./../../media/imgs/mmb.jpg');
-        background-size: cover;
-        background-position: left top;
-        position: absolute;
-        background-attachment: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-    }
+    // .mb-bg {
+    //     background-image: url('./../../media/imgs/mmb.jpg');
+    //     background-size: cover;
+    //     background-position: left top;
+    //     background-attachment: fixed;
+    //     height: 90vh;
+    //     width: 100vw;
+    //     @extend .cover;
+    // }
 }
 
 footer {

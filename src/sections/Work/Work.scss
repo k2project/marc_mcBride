@@ -14,13 +14,18 @@
     }
 }
 .Work__download {
-    // text-align: center;
-    // grid-column: span 2;
     a.btn {
-        // margin: auto;
         color: crimson;
         margin: 0;
         top: 1rem;
+    }
+}
+@include tablet {
+    .Work__download {
+        text-align: center;
+        a.btn {
+            margin: 0 auto -1rem;
+        }
     }
 }
 @include mobile {

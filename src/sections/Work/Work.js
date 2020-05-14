@@ -36,14 +36,15 @@ export default function Work() {
                         </h3>
                         <ul aria-labelledby='music-direction'>
                             <li>
-                                Davines World Wide Hair Tour 2019 - The Harpa,
-                                Iceland <br className='mobile' />| Orchestra:
-                                Iceland Symphony |
-                            </li>
-                            <li>
                                 We Will Rock You - Queen Theatrical Productions
                                 / RCP
                             </li>
+                            <li>
+                                Davines World Wide Hair Tour 2019 - The Harpa,
+                                Iceland <br className='mobile' />| Orchestra:
+                                Sinfonia Nord |
+                            </li>
+
                             <li>
                                 Grease The Musical - David Ian Productions / RCP
                             </li>
@@ -55,14 +56,14 @@ export default function Work() {
                                 <br className='mobile' />| Orchestra: British
                                 Sinfonietta |
                             </li>
-                            <li>
+                            {/* <li>
                                 Tonight From The West End - UK Concert Tour{' '}
                                 <br className='mobile' />| Orchestra: British
                                 Sinfonietta |
-                            </li>
+                            </li> */}
                             <li>Best of Musical Starnights - European Tour</li>
                             <li>Vanara The Musical - Original Workshop</li>
-                            <li>Save The Last Dance For Me - UK Tour</li>
+                            {/* <li>Save The Last Dance For Me - UK Tour</li> */}
                         </ul>
                     </section>
                     <section>

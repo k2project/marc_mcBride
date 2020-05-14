@@ -166,6 +166,14 @@ section {
 .mobile {
     display: none;
 }
+//FIX TO FIXED BG JUMPING IN CHROME
+.About,
+.Media,
+.Work,
+.Testimonials {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 @include desktop-sm {
     .wrapper {
         width: 100%;

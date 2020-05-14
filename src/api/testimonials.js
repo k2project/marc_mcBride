@@ -25,6 +25,36 @@ export const testimonials = [
         text: (
             <Fragment>
                 <p>
+                    I have had the pleasure of creating with Marc on diverse
+                    work over the years. He is so innovative and calm in his
+                    approach. He takes direction, yet offers ideas and solutions
+                    throughout development of the creative process! A gifted
+                    arranger, he understands and really gets inside the head of
+                    the client or creative! He is always able to get the best
+                    out of vocalists, musicians and casts.{' '}
+                </p>
+                <p>
+                    Always prepared, the quality of work he delivers is so
+                    impressive going above and beyond to make sure that the end
+                    result is the best it can be.{' '}
+                </p>
+                <p>
+                    From creating, arranging, vocal, sound, working alongside
+                    choreography, video and lights, he ensures his work runs
+                    inline to complement. He is easily adaptable but more than
+                    anything Marc is a joy to create with!{' '}
+                </p>
+                <p>He really is my go to! </p>
+            </Fragment>
+        ),
+        name: 'Gareth Walker',
+        title: 'International Artistic Director & Choreographer ',
+        location: 'London',
+    },
+    {
+        text: (
+            <Fragment>
+                <p>
                     As a musical director, Marc McBride has many strengths both
                     on and off the stage.{' '}
                 </p>
@@ -45,7 +75,7 @@ export const testimonials = [
             </Fragment>
         ),
         name: 'Joyce Kuo',
-        title: 'Brian May Endorsed Featured Guitarist of We Will Rock You ',
+        title: 'Brian May’s Featured Guitarist of We will Rock You',
         location: 'Los Angeles ',
     },
     {

@@ -9,26 +9,18 @@ import Contact from './sections/Contact/Contact';
 import Testimonials from './sections/Testimonials/Testimonials';
 import SkipToMainLink from './components/SkipToMainLink';
 
-// const t = new Date().getTime();
-// //30 Sept
-// const exp = new Date(2019, 9, 30, 0, 0, 0, 0).getTime();
-// const out = exp>t? true : null;
-const out = true;
-
 export default function App() {
     return (
         <Fragment>
             <SkipToMainLink />
-            {out && (
-                <div className='App Marc_McBride'>
-                    <Top />
-                    <About />
-                    <Media />
-                    <Work />
-                    <Testimonials />
-                    <Contact />
-                </div>
-            )}
+            <div className='App Marc_McBride'>
+                <Top />
+                <About />
+                <Media />
+                <Work />
+                <Testimonials />
+                <Contact />
+            </div>
         </Fragment>
     );
 }
