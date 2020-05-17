@@ -36,7 +36,7 @@ export default function Contact({ showPrivate }) {
                                     rel='noopener noreferrer'
                                     onMouseDown={(e) => e.preventDefault()}
                                 >
-                                    www.globalartists.com
+                                    www.globalartists.co.uk
                                 </a>
                             </li>
                             <li>

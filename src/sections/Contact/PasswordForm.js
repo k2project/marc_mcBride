@@ -26,13 +26,11 @@ export default function PasswordForm({ showPrivate }) {
             lock.classList.add('unlocked');
             //open private section and sroll to that part
             showPrivate(true);
-            setTimeout(
-                () =>
-                    document
-                        .getElementById('playing-examples')
-                        .scrollIntoView(),
-                500
-            );
+            setTimeout(() => {
+                const private_el = document.getElementById('playing-examples');
+                private_el.scrollIntoView();
+                private_el.focus();
+            }, 500);
         }
     };
 
@@ -48,6 +46,7 @@ export default function PasswordForm({ showPrivate }) {
                     onClick={handleLinkClick}
                     onMouseDown={(e) => e.preventDefault()}
                     className='private-link'
+                    id='playingexamples'
                 >
                     Marc McBride - Playing Examples
                 </a>
