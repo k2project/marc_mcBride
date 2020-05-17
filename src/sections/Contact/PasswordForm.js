@@ -22,6 +22,7 @@ export default function PasswordForm({ showPrivate }) {
                 lock.classList.remove('anim');
             }, 300);
         } else {
+            e.target.blur();
             // unlock lock
             lock.classList.add('unlocked');
             //open private section and sroll to that part
