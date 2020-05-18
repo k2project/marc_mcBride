@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
+import { PRIV_PASSWORD } from '../../api/env';
 
 export default function PasswordForm({ showPrivate }) {
-    const PRIV_PASSWORD = '1234';
     const [link_clicked, set_link_clicked] = useState(false);
     const handleLinkClick = async () => {
         await set_link_clicked(true);

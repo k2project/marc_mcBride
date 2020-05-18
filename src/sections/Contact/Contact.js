@@ -78,8 +78,19 @@ export default function Contact({ showPrivate }) {
                                     />
                                 </a>
                             </li>
+
                             <li className='social-media'>
-                                <img src={instagram} alt='instagram' />
+                                <a
+                                    href='https://www.instagram.com/marc_mcbride/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    onMouseDown={(e) => e.preventDefault()}
+                                >
+                                    <img
+                                        src={instagram}
+                                        alt='Marc McBride instagram account'
+                                    />
+                                </a>
                             </li>
                         </ul>
                     </section>

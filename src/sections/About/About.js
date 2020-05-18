@@ -8,7 +8,7 @@ export default function About() {
                 <h2 className='section__title'>About</h2>
                 <div className='section__content'>
                     <p>
-                        Scottish born and raised. Based between the U.K and the
+                        Scottish born and raised. Now based predominantly in the
                         U.S.
                     </p>
                     <p>Studied at The Royal Academy of Music, London. </p>

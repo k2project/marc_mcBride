@@ -40,7 +40,7 @@ export default function Work() {
                                 / RCP
                             </li>
                             <li>
-                                Davines World Wide Hair Tour 2019 - The Harpa,
+                                Davines World Wide Tour 2019 - The Harpa,
                                 Iceland <br className='mobile' />| Orchestra:
                                 Sinfonia Nord |
                             </li>
