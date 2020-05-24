@@ -81,6 +81,29 @@ export const testimonials = [
     {
         text: (
             <p>
+                I adore working with Marc! An accomplished arranger, vocal
+                director, music director, coach and orchestrator - Marc has the
+                ability to make music lift off the page in ways unlike anyone
+                else I have ever worked with. Entertaining and empathetic, Marc
+                cares deeply about his coworkers. Marc is a trustworthy Vocal
+                Director, always championing vocal health and the success of his
+                performers. An accomplished musical theatre actor himself, Marc
+                is endlessly supportive and never competitive. If he isn’t
+                available, he’s the first to recommend A+ talent to replace
+                himself (without the fear of becoming dispensable.) Marc’s work
+                ethic speaks for itself as he is comfortable in any venue: from
+                West End to cruise ships and everything in between. I happily
+                recommend Marc as a creative genius and look forward to working
+                with Marc for many years to come!
+            </p>
+        ),
+        name: 'Auri Marcus',
+        title: 'Creative Leader, Educator, Producer',
+        location: 'New York',
+    },
+    {
+        text: (
+            <p>
                 I have worked with Marc now for over 5 years on a number of
                 different commercial and theatre projects including Musical
                 Starnights, a European Tour for which I was Creative Consultant.
@@ -108,6 +131,23 @@ export const testimonials = [
         name: 'Christopher Dee',
         title: 'Vocal Fixer & Director of Maida Vale Singers ',
         location: 'London ',
+    },
+    {
+        text: (
+            <p>
+                Marc's skills, talents, and professionalism are always evident
+                in the work and projects he is a part of. It is always a
+                pleasure to have him as part of the team as he brings his
+                experience and expertise in to the room and to the project. His
+                musical skills are augmented with his excellent communication
+                and interpersonal skills that are always valued and appreciated
+                by the other members of the production team, as well as each
+                cast member. A true asset to any production.{' '}
+            </p>
+        ),
+        name: 'Taylor Roberts',
+        title: 'Senior Music Supervisor for Royal Caribbean Productions  ',
+        location: 'Miami',
     },
     // {
     //     text: <p></p>,

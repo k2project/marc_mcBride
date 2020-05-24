@@ -70,6 +70,9 @@ export default function Work() {
                         <h3 id='music-performiong'>Performing:</h3>
                         <ul aria-labelledby='music-performing'>
                             <li>
+                                Wicked The Musical - Apollo Victoria, West End
+                            </li>
+                            <li>
                                 John Wilson Orchestra - Music of MGM - Royal
                                 Albert Hall / UK Tour
                             </li>
@@ -79,9 +82,6 @@ export default function Work() {
                             <li>
                                 Music Of Danny Elfman &amp; Tim Burton - Royal
                                 Albert Hall / UK Tour
-                            </li>
-                            <li>
-                                Wicked The Musical - Apollo Victoria, West End
                             </li>
                             <li>
                                 Les Miserables 20th Anniversary - Queens
