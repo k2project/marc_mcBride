@@ -2,20 +2,20 @@
 
 Theatre Music Director, Conductor & Pianist.
 
-# Motivation
+## Motivation
 
 An end-to-end, commercial project. 
 
-# Tech/frameworks used
+## Tech/frameworks used
 
 ### Built with:
 - React
 
 
-# Features
+## Features
 
 Marc's website features HTML5 Video with customised, accessibility compliant controllers.
 
-# Demo
+## Demo
 
 Website available [here](https://www.marc-mcbride.com).
