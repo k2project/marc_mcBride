@@ -13,11 +13,44 @@
         margin-bottom: 0.5rem;
     }
 }
+.Work__corporate {
+    padding-top: 1rem;
+    width: 65rem;
+    li {
+        // border: solid #efefef 0.1rem;
+        height: 5.5rem;
+        width: 13rem;
+        display: inline-block;
+        margin: 0;
+        display: inline-grid;
+        align-content: center;
+        justify-content: center;
+        font-size: 6rem;
+        margin: 0.5rem 1rem;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            bottom: 0;
+            // top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        //QG magazin
+        li:nth-child(3) {
+            img {
+                max-height: 80%;
+            }
+        }
+    }
+}
 .Work__download {
+    grid-column: span 2;
+    top: 4rem;
+
     a.btn {
         color: crimson;
-        margin: 0;
-        top: 1rem;
+        margin: 0 auto;
     }
 }
 @include tablet {
@@ -33,6 +66,29 @@
         font-size: 1.4rem;
         li {
             margin-bottom: 0.8rem;
+        }
+    }
+    .Work__corporate {
+        width: 100%;
+        li {
+            height: 5rem;
+            width: 9rem;
+            margin: 0.5rem 0.7rem;
+        }
+    }
+}
+@include mobile-sm {
+    .Work__corporate {
+        li {
+            // border: solid #efefef 0.1rem;
+            height: 5rem;
+            width: 8rem;
+            margin: 0.2rem 0.7rem;
+        }
+        li:nth-child(3) {
+            img {
+                max-width: 70%;
+            }
         }
     }
 }
