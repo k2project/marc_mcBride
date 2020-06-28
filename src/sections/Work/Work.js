@@ -11,25 +11,26 @@ import fairmont from '../../media/logos/fairmont.png';
 import gq from '../../media/logos/gq.png';
 import harpa2 from '../../media/logos/harpa2.png';
 import iaea from '../../media/logos/ia.png';
-import rcc from '../../media/logos/rcc2.png';
+import rcc from '../../media/logos/rcc.png';
 import seaborn from '../../media/logos/seaborn.png';
-import savoyhotel from '../../media/logos/savoy2.png';
+import savoyhotel from '../../media/logos/savoy.png';
+import x from '../../media/logos/x.png';
 
 // TCB Group London,  ,
 export default function Work() {
     const logos = [
         { name: 'Attitude Magazine ', src: attitude },
-        { name: 'Celebrity Cruises International', src: rcc },
-
-        { name: 'British GQ Magazine', src: gq },
-        { name: 'Fairmont Hotel Group', src: fairmont },
         { name: 'Beyond Brodway', src: bb },
-        { name: 'Seabourn', src: seaborn },
         { name: 'Davines International', src: davines },
+        { name: 'British GQ Magazine', src: gq },
         { name: 'Carnival Corporation & PLC', src: carnival },
-        { name: 'The Savoy Hotel London', src: savoyhotel },
+        { name: 'Fairmont Hotel Group', src: fairmont },
+        // { name: 'Seabourn', src: seaborn },
         { name: 'The Hippodrome Casino London', src: casino },
         { name: 'The International Atomic Energy Agency Vienna', src: iaea },
+        { name: 'Celebrity Cruises International', src: rcc },
+        { name: 'Celebrity X Cruises', src: x },
+        { name: 'The Savoy Hotel London', src: savoyhotel },
         { name: 'Harpa', src: harpa2 },
     ];
     const logosList = logos.map((logo) => (
@@ -101,7 +102,7 @@ export default function Work() {
                         </ul>
                     </section>
                     <section>
-                        <h3 id='corporate'>Commercial/Corporte:</h3>
+                        <h3 id='corporate'>Commercial/Corporate:</h3>
                         <ul
                             aria-labelledby='corporate'
                             className='Work__corporate'

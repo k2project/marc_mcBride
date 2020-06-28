@@ -31,7 +31,7 @@ export const media = [
     {
         title: 'Vanara The Musical - Concept Album ',
         role: 'Music Supervision',
-        collaborators: null,
+        collaborators: 'Ted Sperling',
         img: 'Vanara.jpg',
         video: 'Vanara',
     },
