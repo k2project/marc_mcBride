@@ -1,6 +1,6 @@
 import React from 'react';
 import './Work.scss';
-import cv from '../../media/Marc_McBride_Online_CV.pdf';
+import cv from '../../media/Marc McBride Resume 2021.pdf';
 
 import attitude from '../../media/logos/attitude.png';
 import bb from '../../media/logos/bb.png';
@@ -15,23 +15,26 @@ import rcc from '../../media/logos/rcc.png';
 import seaborn from '../../media/logos/seaborn.png';
 import savoyhotel from '../../media/logos/savoy.png';
 import x from '../../media/logos/x.png';
-
+import bbc from '../../media/logos/bbc.png';
+import universalMusic from '../../media/logos/umg.png';
 // TCB Group London,  ,
 export default function Work() {
     const logos = [
         { name: 'Attitude Magazine ', src: attitude },
         { name: 'Beyond Brodway', src: bb },
-        { name: 'Davines International', src: davines },
+        { name: 'BBC', src: bbc },
         { name: 'British GQ Magazine', src: gq },
         { name: 'Carnival Corporation & PLC', src: carnival },
         { name: 'Fairmont Hotel Group', src: fairmont },
-        // { name: 'Seabourn', src: seaborn },
         { name: 'The Hippodrome Casino London', src: casino },
         { name: 'The International Atomic Energy Agency Vienna', src: iaea },
         { name: 'Celebrity Cruises International', src: rcc },
+        { name: 'Seabourn', src: seaborn },
         { name: 'Celebrity X Cruises', src: x },
+        { name: 'Davines International', src: davines },
         { name: 'The Savoy Hotel London', src: savoyhotel },
         { name: 'Harpa', src: harpa2 },
+        { name: 'Universal Music Group', src: universalMusic },
     ];
     const logosList = logos.map((logo) => (
         <li key={logo.name}>
@@ -70,6 +73,7 @@ export default function Work() {
                             Music Direction/Conducting:
                         </h3>
                         <ul aria-labelledby='music-direction'>
+                            <li>Mamma Mia! - Littlestar Productions / RCP </li>
                             <li>
                                 We Will Rock You - Queen Theatrical Productions
                                 / RCP
@@ -118,7 +122,7 @@ export default function Work() {
                         className='btn'
                         onMouseDown={(e) => e.preventDefault()}
                     >
-                        Download PDF CV
+                        Download PDF Resume
                     </a>
                 </section>
             </div>
