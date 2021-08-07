@@ -4,7 +4,8 @@ import { media } from './../../api/media';
 import DisplayVideo from './DisplayVideo';
 
 export default function Media() {
-    const NUM_OF_VID_TO_DISPLAY_INIT = 9;
+    const NUM_OF_VID_TO_DISPLAY_INIT = 6;
+    // const NUM_OF_VID_TO_DISPLAY_INIT = 9;
     const [allMedia, setAllMediaTrue] = useState(false);
     const mediaBox12 = media
         .slice(0, NUM_OF_VID_TO_DISPLAY_INIT)

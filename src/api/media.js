@@ -59,13 +59,13 @@ export const media = [
     //     video: 'BrokenStrings',
     // },
 
-    {
-        title: 'Grease The Musical',
-        role: 'Music Director',
-        collaborators: null,
-        img: 'Grease.jpg',
-        video: 'Grease',
-    },
+    // {
+    //     title: 'Grease The Musical',
+    //     role: 'Music Director',
+    //     collaborators: null,
+    //     img: 'Grease.jpg',
+    //     video: 'Grease',
+    // },
     // {
     //     title: 'Cosmopolitan - Celebrity Cruises International',
     //     role: 'Music Creation & Supervision',
@@ -80,13 +80,13 @@ export const media = [
     //     img:'garcia.jpg',
     //     video:'AdamGarcia'
     // },
-    {
-        title: 'Eden Espinosa - Live In London',
-        role: 'Music Director ',
-        collaborators: null,
-        img: 'EdenEspinosa2.jpg',
-        video: 'EdenEspinosa',
-    },
+    // {
+    //     title: 'Eden Espinosa - Live In London',
+    //     role: 'Music Director ',
+    //     collaborators: null,
+    //     img: 'EdenEspinosa2.jpg',
+    //     video: 'EdenEspinosa',
+    // },
     // {
     //     title:'Maxx - Celebrity Cruises International',
     //     role:'Music Creation & Supervision',
@@ -94,11 +94,11 @@ export const media = [
     //     img:'Maxx.jpg',
     //     video:'Maxx'
     // },
-    {
-        title: 'Shoshana Bean & Eva Noblezada',
-        role: 'Music Director ',
-        collaborators: null,
-        img: 'S&E2.png',
-        video: 'ShoshanaAndEva',
-    },
+    // {
+    //     title: 'Shoshana Bean & Eva Noblezada',
+    //     role: 'Music Director ',
+    //     collaborators: null,
+    //     img: 'S&E2.png',
+    //     video: 'ShoshanaAndEva',
+    // },
 ];

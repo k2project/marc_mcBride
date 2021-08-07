@@ -1,6 +1,6 @@
 import React from 'react';
 import './Work.scss';
-import cv from '../../media/Marc McBride Resume 2021.pdf';
+// import cv from '../../media/Marc McBride Resume 2021.pdf';
 
 import attitude from '../../media/logos/attitude.png';
 import bb from '../../media/logos/bb.png';
@@ -23,7 +23,7 @@ export default function Work() {
         { name: 'Attitude Magazine ', src: attitude },
         { name: 'Beyond Brodway', src: bb },
         { name: 'BBC', src: bbc },
-        { name: 'British GQ Magazine', src: gq },
+        { name: 'Universal Music Group', src: universalMusic },
         { name: 'Carnival Corporation & PLC', src: carnival },
         { name: 'Fairmont Hotel Group', src: fairmont },
         { name: 'The Hippodrome Casino London', src: casino },
@@ -34,7 +34,7 @@ export default function Work() {
         { name: 'Davines International', src: davines },
         { name: 'The Savoy Hotel London', src: savoyhotel },
         { name: 'Harpa', src: harpa2 },
-        { name: 'Universal Music Group', src: universalMusic },
+        { name: 'British GQ Magazine', src: gq },
     ];
     const logosList = logos.map((logo) => (
         <li key={logo.name}>
@@ -117,7 +117,7 @@ export default function Work() {
                 </div>
                 <section className='Work__download'>
                     <a
-                        href={cv}
+                        href='/videos/Marc McBride Resume 2021.pdf'
                         download
                         className='btn'
                         onMouseDown={(e) => e.preventDefault()}
