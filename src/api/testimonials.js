@@ -17,8 +17,7 @@ export const testimonials = [
             </p>
         ),
         name: 'Andrew Bryan',
-        title:
-            'Theatrical Producer Opus Blue Productions, Music Director, Conductor',
+        title: 'Theatrical Producer Opus Blue Productions, Music Director, Conductor',
         location: 'New York',
     },
     {
@@ -75,7 +74,7 @@ export const testimonials = [
             </Fragment>
         ),
         name: 'Joyce Kuo',
-        title: 'Brian May’s Featured Guitarist of We will Rock You',
+        title: 'Brian May’s Featured Guitarist of We Will Rock You',
         location: 'Los Angeles ',
     },
     {

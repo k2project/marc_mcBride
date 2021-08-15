@@ -85,7 +85,8 @@ export default function Work() {
                             </li>
 
                             <li>
-                                Grease The Musical - David Ian Productions / RCP
+                                Grease The Musical - Live Nation (Theatrical) UK
+                                (fka David Ian Productions)
                             </li>
                             <li>Eden Espinosa - Live In London</li>
                             <li>Shoshana Bean - Live in London</li>
