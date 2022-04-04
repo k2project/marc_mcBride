@@ -20,7 +20,7 @@ export default function Top() {
                         MARC <br />
                         McBRIDE
                     </h1>
-                    <h2>Theatre Music Director</h2>
+                    <h2>Music Director</h2>
                     <p>
                         Coffee lover. Dog lover. <br />
                         Health &amp; Fitness junkie. Traveller.
@@ -31,8 +31,9 @@ export default function Top() {
     );
 }
 function handleScroll() {
-    let topElRectTop = document.querySelector('.Top').getBoundingClientRect()
-        .top;
+    let topElRectTop = document
+        .querySelector('.Top')
+        .getBoundingClientRect().top;
     const topEl = document.querySelector('.Top__content');
 
     if (topElRectTop < 0) {

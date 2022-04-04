@@ -51,6 +51,13 @@ export const media = [
         img: 'CarrieHopeFletcher.jpg',
         video: 'CarrieHopeFletcher',
     },
+    {
+        title: 'Christina Bianco UK Tour',
+        role: 'Music Director ',
+        collaborators: null,
+        img: 'bianco-min.png',
+        video: 'ChristinaBianco',
+    },
     // {
     //     title: 'Broken Strings - Celebrity Cruises International',
     //     role: 'Music Director ',
@@ -80,13 +87,13 @@ export const media = [
     //     img:'garcia.jpg',
     //     video:'AdamGarcia'
     // },
-    // {
-    //     title: 'Eden Espinosa - Live In London',
-    //     role: 'Music Director ',
-    //     collaborators: null,
-    //     img: 'EdenEspinosa2.jpg',
-    //     video: 'EdenEspinosa',
-    // },
+    {
+        title: 'Eden Espinosa Live In London',
+        role: 'Music Director ',
+        collaborators: null,
+        img: 'Espinosa.png',
+        video: 'EdenEspinosaLiveInLondon',
+    },
     // {
     //     title:'Maxx - Celebrity Cruises International',
     //     role:'Music Creation & Supervision',

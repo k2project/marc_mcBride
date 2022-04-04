@@ -1,16 +1,16 @@
 # Marc McBride Official Website
 
-Theatre Music Director, Conductor & Pianist.
+Music Director, Conductor & Pianist.
 
 ## Motivation
 
-An end-to-end, commercial project. 
+An end-to-end, commercial project.
 
 ## Tech/frameworks used
 
 ### Built with:
-- React
 
+-   React
 
 ## Features
 

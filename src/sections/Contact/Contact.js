@@ -22,7 +22,7 @@ export default function Contact({ showPrivate }) {
                     <h2 id='contact-details' className='sr-only'>
                         Contact details
                     </h2>
-                    <section>
+                    {/* <section>
                         <h3 id='global-artists'> Global Artists</h3>
 
                         <ul
@@ -50,7 +50,7 @@ export default function Contact({ showPrivate }) {
                                 </a>
                             </li>
                         </ul>
-                    </section>
+                    </section> */}
                     <section>
                         <h3 id='direct'> Get In Touch Directly</h3>
 

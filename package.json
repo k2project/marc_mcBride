@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.14.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "2.1.8"
+    "react-scripts": "^5.0.0",
+    "sass": "^1.49.11"
   },
   "scripts": {
     "start": "react-scripts start",
